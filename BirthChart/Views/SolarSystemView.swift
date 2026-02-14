@@ -36,8 +36,7 @@ struct SolarSystemView: View {
                             Text(currentDateString)
                                 .font(.caption)
                                 .fontWeight(.medium)
-                            let days = Int(timeOffsetDays)
-                            Text(days >= 0 ? "+\(days) days" : "\(days) days")
+                            Text(formatTimeOffset(timeOffsetDays))
                                 .font(.caption2)
                         }
                         .foregroundColor(.white.opacity(0.8))
@@ -82,6 +81,24 @@ struct SolarSystemView: View {
         }
         .navigationTitle("Solar System")
         .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func formatTimeOffset(_ days: Double) -> String {
+        let absDays = abs(days)
+        let sign = days >= 0 ? "+" : "-"
+        if absDays < 1 {
+            let hours = Int(absDays * 24)
+            return "\(sign)\(hours) hours"
+        } else if absDays < 365 {
+            return "\(sign)\(Int(absDays)) days"
+        } else {
+            let years = Int(absDays / 365.25)
+            let remaining = Int(absDays - Double(years) * 365.25)
+            if remaining > 30 {
+                return "\(sign)\(years) years, \(remaining) days"
+            }
+            return "\(sign)\(years) years"
+        }
     }
 }
 
@@ -136,6 +153,9 @@ struct SolarSystemSceneView: UIViewRepresentable {
         // Deadzone for sticks
         private let deadzone: Float = 0.1
 
+        // Exponential time acceleration
+        private var triggerHoldTime: Double = 0
+
         private let dateFormatter: DateFormatter = {
             let f = DateFormatter()
             f.dateStyle = .medium
@@ -147,11 +167,21 @@ struct SolarSystemSceneView: UIViewRepresentable {
             self.parent = parent
         }
 
+        /// Exponential speed curve: the longer you hold the trigger, the faster time moves.
+        private func timeSpeed(holdSeconds: Double) -> (daysPerSec: Double, label: String) {
+            switch holdSeconds {
+            case ..<2:   return (30,    "1 month/sec")
+            case ..<5:   return (365,   "1 year/sec")
+            case ..<8:   return (3650,  "1 decade/sec")
+            case ..<12:  return (36500, "1 century/sec")
+            default:     return (365000, "1 millennium/sec")
+            }
+        }
+
         func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
             let dt: Float = lastTime == 0 ? 1.0 / 60.0 : Float(min(time - lastTime, 0.05))
             lastTime = time
 
-            // Read controller state (these are just floats, safe to read from render thread)
             let lx = parent.controller.leftStickX
             let ly = parent.controller.leftStickY
             let ry = parent.controller.rightStickY
@@ -162,27 +192,24 @@ struct SolarSystemSceneView: UIViewRepresentable {
 
             guard parent.controller.isConnected else { return }
 
-            // Disable SceneKit's default camera control when controller is active
             if let sv = scnView, sv.allowsCameraControl {
                 sv.allowsCameraControl = false
             }
 
             // Left stick: orbit
-            if abs(lx) > deadzone {
-                orbitAngleH += lx * dt * 2.0
-            }
+            if abs(lx) > deadzone { orbitAngleH += lx * dt * 2.0 }
             if abs(ly) > deadzone {
                 orbitAngleV -= ly * dt * 1.5
                 orbitAngleV = max(-Float.pi / 2.0 + 0.05, min(Float.pi / 2.0 - 0.05, orbitAngleV))
             }
 
-            // Right stick Y: zoom
+            // Right stick: zoom
             if abs(ry) > deadzone {
                 orbitDistance -= ry * dt * 25.0
                 orbitDistance = max(5, min(80, orbitDistance))
             }
 
-            // Update camera position
+            // Camera
             if let cam = cameraNode {
                 let x = orbitDistance * cos(orbitAngleV) * sin(orbitAngleH)
                 let y = orbitDistance * sin(orbitAngleV)
@@ -191,17 +218,22 @@ struct SolarSystemSceneView: UIViewRepresentable {
                 cam.look(at: SCNVector3(0, 0, 0))
             }
 
-            // Triggers: time scrub
-            // Full trigger = 30 days per second. Exponential feel.
-            let timeSpeed: Double = 30.0
-            let forward = Double(r2 * r2) * timeSpeed * Double(dt)
-            let backward = Double(l2 * l2) * timeSpeed * Double(dt)
+            // --- Triggers: Exponential Time Scrub ---
+            let triggerActive = r2 > deadzone || l2 > deadzone
+            if triggerActive {
+                triggerHoldTime += Double(dt)
+            } else {
+                triggerHoldTime = 0
+            }
+
+            let (speed, _) = timeSpeed(holdSeconds: triggerHoldTime)
+            let forward = Double(r2 * r2) * speed * Double(dt)
+            let backward = Double(l2 * l2) * speed * Double(dt)
             let timeDelta = forward - backward
 
             if abs(timeDelta) > 0.0001 {
                 let newOffset = parent.timeOffsetDays + timeDelta
 
-                // Recompute positions every ~100ms
                 if abs(time - lastRecompute) > 0.1 {
                     lastRecompute = time
                     DispatchQueue.main.async { [weak self] in
@@ -222,6 +254,7 @@ struct SolarSystemSceneView: UIViewRepresentable {
                     guard let self else { return }
                     self.parent.timeOffsetDays = 0
                     self.parent.controller.crossJustPressed = false
+                    self.triggerHoldTime = 0
                     self.resetPositions()
                 }
             }

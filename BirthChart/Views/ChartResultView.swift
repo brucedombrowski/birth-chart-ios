@@ -37,7 +37,10 @@ struct ChartResultView: View {
                 // Aspects
                 aspectsSection
 
-                // 3D view link
+                // ISS Birth Chart
+                issBirthSection
+
+                // 3D view links
                 NavigationLink {
                     SolarSystemView(chart: chart, birthData: birthData)
                 } label: {
@@ -47,6 +50,18 @@ struct ChartResultView: View {
                         .padding()
                         .background(gold.opacity(0.2))
                         .foregroundColor(gold)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+
+                NavigationLink {
+                    EarthOrbitView(initialDate: birthData.date, chart: chart)
+                } label: {
+                    Label("View Earth Orbit at Birth", systemImage: "circle.dashed")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.cyan.opacity(0.15))
+                        .foregroundColor(.cyan)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
                 }
 
@@ -75,6 +90,73 @@ struct ChartResultView: View {
             }
             .padding()
         }
+    }
+
+    // MARK: - ISS Birth Chart
+
+    private var issBirthSection: some View {
+        let issLaunchDate = DateComponents(calendar: .init(identifier: .gregorian),
+                                           timeZone: TimeZone(identifier: "UTC"),
+                                           year: 1998, month: 11, day: 20).date!
+        let bornAfterISS = birthData.date >= issLaunchDate
+
+        return VStack(alignment: .leading, spacing: 8) {
+            Text("Where Was the ISS When You Were Born?")
+                .font(.headline)
+                .foregroundColor(.cyan)
+
+            if bornAfterISS {
+                if let iss = SatelliteDatabase.all.first(where: { $0.id == "iss" }) {
+                    let ground = iss.groundPosition(at: birthData.date)
+                    let region = OrbitalObject.regionName(latitude: ground.latitude,
+                                                         longitude: ground.longitude)
+                    HStack(spacing: 12) {
+                        Text("🛸").font(.system(size: 40))
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("The ISS was orbiting \(region)")
+                                .font(.subheadline)
+                                .foregroundColor(cream)
+                            Text(String(format: "%.1f°%@, %.1f°%@  ·  420 km altitude",
+                                        abs(ground.latitude),
+                                        ground.latitude >= 0 ? "N" : "S",
+                                        abs(ground.longitude),
+                                        ground.longitude >= 0 ? "E" : "W"))
+                                .font(.caption.monospacedDigit())
+                                .foregroundColor(.gray)
+                            Text("Moving at 27,600 km/h — orbiting Earth every 92 minutes")
+                                .font(.caption2)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
+            } else {
+                HStack(spacing: 12) {
+                    Text("🚀").font(.system(size: 40))
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("The ISS hadn't been launched yet!")
+                            .font(.subheadline)
+                            .foregroundColor(cream)
+                        let yearsBeforeISS = Int((issLaunchDate.timeIntervalSince(birthData.date)) / (365.25 * 86400))
+                        Text("ISS launched Nov 20, 1998 — \(yearsBeforeISS) years after your birth")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                        Text("You were born in an era with only \(satelliteCountAtBirth()) satellites in orbit")
+                            .font(.caption2)
+                            .foregroundColor(.gray)
+                    }
+                }
+            }
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color.cyan.opacity(0.06))
+                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.cyan.opacity(0.2)))
+        )
+    }
+
+    private func satelliteCountAtBirth() -> Int {
+        SatelliteDatabase.active(at: birthData.date).count
     }
 
     // MARK: - Highlights

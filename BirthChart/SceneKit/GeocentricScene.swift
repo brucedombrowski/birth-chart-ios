@@ -217,6 +217,22 @@ enum GeocentricScene {
         SCNTransaction.commit()
     }
 
+    /// Show/hide satellite nodes based on which satellites are active at the current date.
+    /// Satellites launched after the viewed date are hidden — rewind to 1957 and watch the sky empty.
+    static func updateVisibility(in scene: SCNScene, activeIDs: Set<String>) {
+        let allSats = SatelliteDatabase.all
+        let allIDs = Set(allSats.map { $0.id })
+        let root = scene.rootNode
+
+        for id in allIDs {
+            guard let node = root.childNode(withName: id, recursively: false) else { continue }
+            let shouldShow = activeIDs.contains(id)
+            if node.isHidden != !shouldShow {
+                node.isHidden = !shouldShow
+            }
+        }
+    }
+
     // MARK: - Helpers
 
     private static func createSatelliteNode(name: String, size: CGFloat, color: UIColor) -> SCNNode {

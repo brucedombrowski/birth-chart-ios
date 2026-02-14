@@ -20,8 +20,10 @@ final class GameControllerManager: ObservableObject {
     // Button edge detection
     nonisolated(unsafe) var crossJustPressed = false
     nonisolated(unsafe) var triangleJustPressed = false
+    nonisolated(unsafe) var squareJustPressed = false
     private var prevCross = false
     private var prevTriangle = false
+    private var prevSquare = false
 
     private var controller: GCController?
     private var cancellables = Set<AnyCancellable>()
@@ -68,10 +70,13 @@ final class GameControllerManager: ObservableObject {
 
                 let cross = gp.buttonA.isPressed
                 let triangle = gp.buttonY.isPressed
+                let square = gp.buttonX.isPressed
                 self.crossJustPressed = cross && !self.prevCross
                 self.triangleJustPressed = triangle && !self.prevTriangle
+                self.squareJustPressed = square && !self.prevSquare
                 self.prevCross = cross
                 self.prevTriangle = triangle
+                self.prevSquare = square
             }
         }
     }
