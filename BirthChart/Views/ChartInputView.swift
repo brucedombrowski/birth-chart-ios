@@ -10,7 +10,7 @@ struct ChartInputView: View {
     @State private var selectedTimezone: String = "PST"
     @State private var isComputing = false
 
-    let onComplete: (BirthChartResult, String) -> Void
+    let onComplete: (BirthChartResult, String, BirthData) -> Void
 
     private let states = [
         "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
@@ -234,7 +234,7 @@ struct ChartInputView: View {
             let result = EphemerisEngine.computeChart(birthData: birthData)
             DispatchQueue.main.async {
                 isComputing = false
-                onComplete(result, birthData.name)
+                onComplete(result, birthData.name, birthData)
             }
         }
     }

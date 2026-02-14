@@ -23,6 +23,7 @@
 		A1000014000000000000000E /* AspectDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000014000000000000000E; };
 		A1000015000000000000000F /* SolarSystemScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000015000000000000000F; };
 		A10000160000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000160000000000000010; };
+		A10000170000000000000011 /* GameControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000180000000000000012; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		A2000015000000000000000F /* SolarSystemScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemScene.swift; sourceTree = "<group>"; };
 		A20000160000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20000170000000000000011 /* BirthChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000180000000000000012 /* GameControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -63,6 +65,7 @@
 				A30000050000000000000005 /* Views */,
 				A30000060000000000000006 /* SceneKit */,
 				A30000080000000000000008 /* Resources */,
+				A20000180000000000000012 /* GameControllerManager.swift */,
 			);
 			path = BirthChart;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				A1000013000000000000000D /* MoonPhase.swift in Sources */,
 				A1000014000000000000000E /* AspectDetector.swift in Sources */,
 				A1000015000000000000000F /* SolarSystemScene.swift in Sources */,
+				A10000170000000000000011 /* GameControllerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +233,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 74CBYJ853T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -260,7 +264,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 74CBYJ853T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

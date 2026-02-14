@@ -3,6 +3,7 @@ import SwiftUI
 /// Displays the computed birth chart with all sections.
 struct ChartResultView: View {
     let chart: BirthChartResult
+    let birthData: BirthData
     let name: String
     let onReset: () -> Void
 
@@ -38,7 +39,7 @@ struct ChartResultView: View {
 
                 // 3D view link
                 NavigationLink {
-                    SolarSystemView(chart: chart)
+                    SolarSystemView(chart: chart, birthData: birthData)
                 } label: {
                     Label("View 3D Solar System", systemImage: "globe")
                         .font(.headline)

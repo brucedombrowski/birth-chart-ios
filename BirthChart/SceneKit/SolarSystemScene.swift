@@ -137,6 +137,84 @@ enum SolarSystemScene {
         return scene
     }
 
+    // MARK: - Live Update
+
+    /// Update planet positions in an existing scene from a new chart computation.
+    /// Animates nodes to their new positions for smooth time scrubbing.
+    static func updatePositions(in scene: SCNScene, from chart: BirthChartResult) {
+        let root = scene.rootNode
+
+        let earthLon = chart.planets.first(where: { $0.name == "Sun" })
+            .map { ($0.eclipticLongitude + 180).truncatingRemainder(dividingBy: 360) } ?? 0
+
+        // Update Earth
+        if let earthNode = root.childNode(withName: "Earth", recursively: true) {
+            let visuals = planetVisuals["Earth"]!
+            let angle = earthLon * .pi / 180
+            let pos = SCNVector3(
+                Float(visuals.orbitRadius * cos(angle)),
+                0,
+                Float(visuals.orbitRadius * sin(angle))
+            )
+            SCNTransaction.begin()
+            SCNTransaction.animationDuration = 0.1
+            earthNode.position = pos
+            SCNTransaction.commit()
+
+            // Update Moon relative to Earth
+            if let moon = chart.planets.first(where: { $0.name == "Moon" }),
+               let moonNode = root.childNode(withName: "Moon", recursively: true) {
+                let moonVisuals = planetVisuals["Moon"]!
+                let moonAngle = moon.eclipticLongitude * .pi / 180
+                let moonPos = SCNVector3(
+                    pos.x + Float(moonVisuals.orbitRadius * cos(moonAngle)),
+                    0.1,
+                    pos.z + Float(moonVisuals.orbitRadius * sin(moonAngle))
+                )
+                SCNTransaction.begin()
+                SCNTransaction.animationDuration = 0.1
+                moonNode.position = moonPos
+                SCNTransaction.commit()
+                updateLabel(on: moonNode, text: "Moon \(moon.sign.symbol)")
+            }
+        }
+
+        // Update other planets
+        let planetNames = ["Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
+        for planet in chart.planets where planetNames.contains(planet.name) {
+            guard let visuals = planetVisuals[planet.name],
+                  let node = root.childNode(withName: planet.name, recursively: true) else { continue }
+
+            let angle = planet.eclipticLongitude * .pi / 180
+            let pos = SCNVector3(
+                Float(visuals.orbitRadius * cos(angle)),
+                0,
+                Float(visuals.orbitRadius * sin(angle))
+            )
+            SCNTransaction.begin()
+            SCNTransaction.animationDuration = 0.1
+            node.position = pos
+            SCNTransaction.commit()
+
+            let label = "\(planet.name) \(planet.sign.symbol)"
+            updateLabel(on: node, text: planet.isRetrograde ? "\(label) ℞" : label)
+        }
+    }
+
+    /// Update the text label on a planet node.
+    private static func updateLabel(on node: SCNNode, text: String) {
+        for child in node.childNodes {
+            if let textGeo = child.geometry as? SCNText {
+                textGeo.string = text
+                // Re-center
+                let (min, max) = child.boundingBox
+                let dx = (max.x - min.x) / 2
+                child.position.x = -dx
+                break
+            }
+        }
+    }
+
     // MARK: - Helpers
 
     private static func createPlanetNode(name: String, radius: CGFloat, color: UIColor) -> SCNNode {
