@@ -1,12 +1,11 @@
 import SwiftUI
 import SceneKit
 
-/// Full-screen 3D solar system view with DualSense controller support.
-/// Left stick: orbit camera. Right stick Y: zoom. R2/L2: time forward/rewind.
-/// Cross: reset to birth time. Triangle: toggle labels.
-struct SolarSystemView: View {
-    let chart: BirthChartResult
-    let birthData: BirthData
+/// Geocentric 3D view: Earth at center with LEO/MEO/GEO satellites orbiting.
+/// Supports DualSense controller for camera and time scrubbing.
+struct EarthOrbitView: View {
+    let initialDate: Date
+    let chart: BirthChartResult?
     @Environment(\.dismiss) private var dismiss
     @StateObject private var controller = GameControllerManager()
     @State private var timeOffsetDays: Double = 0
@@ -17,9 +16,9 @@ struct SolarSystemView: View {
         ZStack {
             Color.black.ignoresSafeArea()
 
-            SolarSystemSceneView(
+            EarthOrbitSceneView(
+                initialDate: initialDate,
                 chart: chart,
-                birthData: birthData,
                 controller: controller,
                 timeOffsetDays: $timeOffsetDays,
                 showLabels: $showLabels,
@@ -48,48 +47,57 @@ struct SolarSystemView: View {
 
                     Spacer()
 
-                    if controller.connected {
-                        VStack(alignment: .trailing, spacing: 2) {
-                            Text("🎮 DualSense")
-                                .font(.caption2)
-                                .fontWeight(.medium)
-                            Text("L stick: orbit")
-                            Text("R stick: zoom")
-                            Text("R2/L2: time")
-                            Text("✕ reset  △ labels")
-                        }
-                        .font(.caption2)
-                        .foregroundColor(.white.opacity(0.5))
-                        .padding(8)
-                        .background(.ultraThinMaterial.opacity(0.3))
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                    } else {
-                        VStack(alignment: .trailing, spacing: 2) {
-                            Text("Pinch to zoom")
-                            Text("Drag to orbit")
-                            Text("Two-finger drag to pan")
-                        }
-                        .font(.caption2)
-                        .foregroundColor(.white.opacity(0.5))
-                        .padding(8)
-                        .background(.ultraThinMaterial.opacity(0.3))
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                    // Satellite count
+                    VStack(alignment: .trailing, spacing: 2) {
+                        let sats = SatelliteDatabase.all
+                        Text("\(sats.count) satellites")
+                            .font(.caption2).fontWeight(.medium)
+                        let leo = sats.filter { $0.orbitType == "LEO" }.count
+                        let meo = sats.filter { $0.orbitType == "MEO" }.count
+                        let geo = sats.filter { $0.orbitType == "GEO" }.count
+                        Text("LEO: \(leo) · MEO: \(meo) · GEO: \(geo)")
+                            .font(.caption2)
                     }
+                    .foregroundColor(.white.opacity(0.5))
+                    .padding(8)
+                    .background(.ultraThinMaterial.opacity(0.3))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
                 Spacer()
+
+                // Legend
+                HStack(spacing: 16) {
+                    legendDot(color: .yellow, label: "Station")
+                    legendDot(color: .white, label: "Starlink")
+                    legendDot(color: .green, label: "LEO")
+                    legendDot(color: .orange, label: "MEO/GPS")
+                    legendDot(color: .purple, label: "GEO")
+                }
+                .font(.caption2)
+                .foregroundColor(.white.opacity(0.6))
+                .padding(8)
+                .background(.ultraThinMaterial.opacity(0.3))
+                .clipShape(RoundedRectangle(cornerRadius: 8))
             }
             .padding()
         }
-        .navigationTitle("Solar System")
+        .navigationTitle("Earth Orbit")
         .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func legendDot(color: Color, label: String) -> some View {
+        HStack(spacing: 4) {
+            Circle().fill(color).frame(width: 6, height: 6)
+            Text(label)
+        }
     }
 }
 
-// MARK: - UIViewRepresentable wrapping SCNView with game loop
+// MARK: - UIViewRepresentable
 
-struct SolarSystemSceneView: UIViewRepresentable {
-    let chart: BirthChartResult
-    let birthData: BirthData
+struct EarthOrbitSceneView: UIViewRepresentable {
+    let initialDate: Date
+    let chart: BirthChartResult?
     let controller: GameControllerManager
     @Binding var timeOffsetDays: Double
     @Binding var showLabels: Bool
@@ -101,13 +109,13 @@ struct SolarSystemSceneView: UIViewRepresentable {
 
     func makeUIView(context: Context) -> SCNView {
         let scnView = SCNView()
-        let scene = SolarSystemScene.build(from: chart)
+        let scene = GeocentricScene.build(date: initialDate, chart: chart)
         scnView.scene = scene
         scnView.backgroundColor = .black
         scnView.allowsCameraControl = true
-        scnView.autoenablesDefaultLighting = true
+        scnView.autoenablesDefaultLighting = false
         scnView.delegate = context.coordinator
-        scnView.isPlaying = true  // keeps the render loop alive
+        scnView.isPlaying = true
 
         context.coordinator.scnView = scnView
         context.coordinator.scene = scene
@@ -121,19 +129,16 @@ struct SolarSystemSceneView: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, SCNSceneRendererDelegate {
-        var parent: SolarSystemSceneView
+        var parent: EarthOrbitSceneView
         weak var scnView: SCNView?
         var scene: SCNScene?
         var cameraNode: SCNNode?
 
-        // Camera orbit state
         private var orbitAngleH: Float = 0
-        private var orbitAngleV: Float = 0.65
-        private var orbitDistance: Float = 38
+        private var orbitAngleV: Float = 0.5
+        private var orbitDistance: Float = 22
         private var lastTime: TimeInterval = 0
         private var lastRecompute: TimeInterval = 0
-
-        // Deadzone for sticks
         private let deadzone: Float = 0.1
 
         private let dateFormatter: DateFormatter = {
@@ -143,7 +148,7 @@ struct SolarSystemSceneView: UIViewRepresentable {
             return f
         }()
 
-        init(_ parent: SolarSystemSceneView) {
+        init(_ parent: EarthOrbitSceneView) {
             self.parent = parent
         }
 
@@ -151,7 +156,6 @@ struct SolarSystemSceneView: UIViewRepresentable {
             let dt: Float = lastTime == 0 ? 1.0 / 60.0 : Float(min(time - lastTime, 0.05))
             lastTime = time
 
-            // Read controller state (these are just floats, safe to read from render thread)
             let lx = parent.controller.leftStickX
             let ly = parent.controller.leftStickY
             let ry = parent.controller.rightStickY
@@ -160,29 +164,37 @@ struct SolarSystemSceneView: UIViewRepresentable {
             let crossJust = parent.controller.crossJustPressed
             let triJust = parent.controller.triangleJustPressed
 
-            guard parent.controller.isConnected else { return }
+            guard parent.controller.isConnected else {
+                // Auto-rotate satellites even without controller (every ~2 seconds for smooth orbits)
+                if abs(time - lastRecompute) > 2.0 && parent.timeOffsetDays == 0 {
+                    lastRecompute = time
+                    DispatchQueue.main.async { [weak self] in
+                        guard let self, let scene = self.scene else { return }
+                        let now = Date()
+                        GeocentricScene.updatePositions(in: scene, date: now, chart: self.parent.chart)
+                    }
+                }
+                return
+            }
 
-            // Disable SceneKit's default camera control when controller is active
             if let sv = scnView, sv.allowsCameraControl {
                 sv.allowsCameraControl = false
             }
 
-            // Left stick: orbit
-            if abs(lx) > deadzone {
-                orbitAngleH += lx * dt * 2.0
-            }
+            // Left stick: orbit (full spherical)
+            if abs(lx) > deadzone { orbitAngleH += lx * dt * 2.0 }
             if abs(ly) > deadzone {
                 orbitAngleV -= ly * dt * 1.5
-                orbitAngleV = max(-Float.pi / 2.0 + 0.05, min(Float.pi / 2.0 - 0.05, orbitAngleV))
+                orbitAngleV = max(-Float.pi / 2 + 0.05, min(Float.pi / 2 - 0.05, orbitAngleV))
             }
 
-            // Right stick Y: zoom
+            // Right stick: zoom
             if abs(ry) > deadzone {
-                orbitDistance -= ry * dt * 25.0
-                orbitDistance = max(5, min(80, orbitDistance))
+                orbitDistance -= ry * dt * 20.0
+                orbitDistance = max(5, min(50, orbitDistance))
             }
 
-            // Update camera position
+            // Camera
             if let cam = cameraNode {
                 let x = orbitDistance * cos(orbitAngleV) * sin(orbitAngleH)
                 let y = orbitDistance * sin(orbitAngleV)
@@ -191,18 +203,16 @@ struct SolarSystemSceneView: UIViewRepresentable {
                 cam.look(at: SCNVector3(0, 0, 0))
             }
 
-            // Triggers: time scrub
-            // Full trigger = 30 days per second. Exponential feel.
-            let timeSpeed: Double = 30.0
+            // Triggers: time scrub (faster for satellites — 1 day/sec at full trigger)
+            let timeSpeed: Double = 1.0  // days per second at full trigger
             let forward = Double(r2 * r2) * timeSpeed * Double(dt)
             let backward = Double(l2 * l2) * timeSpeed * Double(dt)
             let timeDelta = forward - backward
 
-            if abs(timeDelta) > 0.0001 {
+            if abs(timeDelta) > 0.00001 {
                 let newOffset = parent.timeOffsetDays + timeDelta
 
-                // Recompute positions every ~100ms
-                if abs(time - lastRecompute) > 0.1 {
+                if abs(time - lastRecompute) > 0.05 {
                     lastRecompute = time
                     DispatchQueue.main.async { [weak self] in
                         guard let self else { return }
@@ -216,7 +226,6 @@ struct SolarSystemSceneView: UIViewRepresentable {
                 }
             }
 
-            // Cross: reset time
             if crossJust {
                 DispatchQueue.main.async { [weak self] in
                     guard let self else { return }
@@ -226,7 +235,6 @@ struct SolarSystemSceneView: UIViewRepresentable {
                 }
             }
 
-            // Triangle: toggle labels
             if triJust {
                 DispatchQueue.main.async { [weak self] in
                     guard let self else { return }
@@ -238,22 +246,18 @@ struct SolarSystemSceneView: UIViewRepresentable {
         }
 
         private func recomputePositions(offsetDays: Double) {
-            let newDate = parent.birthData.date.addingTimeInterval(offsetDays * 86400)
-            let newBirthData = BirthData(
-                name: parent.birthData.name,
-                date: newDate,
-                latitude: parent.birthData.latitude,
-                longitude: parent.birthData.longitude,
-                timeZoneOffset: parent.birthData.timeZoneOffset
-            )
-
+            let newDate = parent.initialDate.addingTimeInterval(offsetDays * 86400)
             parent.currentDateString = dateFormatter.string(from: newDate)
 
             DispatchQueue.global(qos: .userInteractive).async { [weak self] in
-                let newChart = EphemerisEngine.computeChart(birthData: newBirthData)
+                guard let self else { return }
+                // Recompute chart for moon position
+                let birthData = BirthData(name: "Now", date: newDate,
+                                          latitude: 0, longitude: 0, timeZoneOffset: 0)
+                let newChart = EphemerisEngine.computeChart(birthData: birthData)
                 DispatchQueue.main.async {
-                    guard let self, let scene = self.scene else { return }
-                    SolarSystemScene.updatePositions(in: scene, from: newChart)
+                    guard let scene = self.scene else { return }
+                    GeocentricScene.updatePositions(in: scene, date: newDate, chart: newChart)
                 }
             }
         }
@@ -261,7 +265,7 @@ struct SolarSystemSceneView: UIViewRepresentable {
         private func resetPositions() {
             guard let scene else { return }
             parent.currentDateString = ""
-            SolarSystemScene.updatePositions(in: scene, from: parent.chart)
+            GeocentricScene.updatePositions(in: scene, date: parent.initialDate, chart: parent.chart)
         }
 
         private func toggleLabels(visible: Bool) {

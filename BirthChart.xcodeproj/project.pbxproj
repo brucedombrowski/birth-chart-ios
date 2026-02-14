@@ -27,6 +27,11 @@
 		A10000180000000000000013 /* SpaceLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000190000000000000013; };
 		A10000190000000000000014 /* LaunchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000020000000000000001A; };
 		A1000020000000000000001A /* launches.json in Resources */ = {isa = PBXBuildFile; fileRef = A2000021000000000000001B; };
+		D40000000000000000000002 /* OrbitalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000001; };
+		D40000000000000000000004 /* GeocentricScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000003; };
+		D40000000000000000000006 /* EarthOrbitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000005; };
+		D40000000000000000000008 /* satellites.json in Resources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000007; };
+		D4000000000000000000000A /* earth_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000009; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		A20000190000000000000013 /* SpaceLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceLaunch.swift; sourceTree = "<group>"; };
 		A2000020000000000000001A /* LaunchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchHistoryView.swift; sourceTree = "<group>"; };
 		A2000021000000000000001B /* launches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launches.json; sourceTree = "<group>"; };
+		D40000000000000000000001 /* OrbitalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitalObject.swift; sourceTree = "<group>"; };
+		D40000000000000000000003 /* GeocentricScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocentricScene.swift; sourceTree = "<group>"; };
+		D40000000000000000000005 /* EarthOrbitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthOrbitView.swift; sourceTree = "<group>"; };
+		D40000000000000000000007 /* satellites.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = satellites.json; sourceTree = "<group>"; };
+		D40000000000000000000009 /* earth_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth_texture.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -92,6 +102,7 @@
 				A20000080000000000000008 /* Aspect.swift */,
 				A20000090000000000000009 /* BirthChart.swift */,
 				A20000190000000000000013 /* SpaceLaunch.swift */,
+				D40000000000000000000001 /* OrbitalObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,6 +127,7 @@
 				A20000040000000000000004 /* ChartResultView.swift */,
 				A20000050000000000000005 /* SolarSystemView.swift */,
 				A2000020000000000000001A /* LaunchHistoryView.swift */,
+				D40000000000000000000005 /* EarthOrbitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				A2000015000000000000000F /* SolarSystemScene.swift */,
+				D40000000000000000000003 /* GeocentricScene.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -141,6 +154,8 @@
 			children = (
 				A20000160000000000000010 /* Assets.xcassets */,
 				A2000021000000000000001B /* launches.json */,
+				D40000000000000000000007 /* satellites.json */,
+				D40000000000000000000009 /* earth_texture.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -220,6 +235,9 @@
 				A10000170000000000000011 /* GameControllerManager.swift in Sources */,
 				A10000180000000000000013 /* SpaceLaunch.swift in Sources */,
 				A10000190000000000000014 /* LaunchHistoryView.swift in Sources */,
+				D40000000000000000000002 /* OrbitalObject.swift in Sources */,
+				D40000000000000000000004 /* GeocentricScene.swift in Sources */,
+				D40000000000000000000006 /* EarthOrbitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +250,8 @@
 			files = (
 				A10000160000000000000010 /* Assets.xcassets in Resources */,
 				A1000020000000000000001A /* launches.json in Resources */,
+				D40000000000000000000008 /* satellites.json in Resources */,
+				D4000000000000000000000A /* earth_texture.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

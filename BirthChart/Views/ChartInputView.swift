@@ -9,6 +9,10 @@ struct ChartInputView: View {
     @State private var selectedState: String = "CA"
     @State private var selectedTimezone: String = "PST"
     @State private var isComputing = false
+    @State private var showLiveSystem = false
+    @State private var showEarthOrbit = false
+    @State private var liveChart: BirthChartResult?
+    @State private var liveBirthData: BirthData?
 
     let onComplete: (BirthChartResult, String, BirthData) -> Void
 
@@ -179,9 +183,93 @@ struct ChartInputView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 12))
                 }
                 .disabled(city.isEmpty || isComputing)
+
+                // Divider
+                HStack {
+                    Rectangle().frame(height: 1).foregroundColor(Color(red: 0.831, green: 0.659, blue: 0.263).opacity(0.3))
+                    Text("or").font(.caption).foregroundColor(.gray)
+                    Rectangle().frame(height: 1).foregroundColor(Color(red: 0.831, green: 0.659, blue: 0.263).opacity(0.3))
+                }
+
+                // View Solar System Now (Heliocentric)
+                Button(action: launchLiveView) {
+                    HStack {
+                        Image(systemName: "sun.max.fill")
+                        Text("Solar System Now")
+                            .font(.headline)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.white.opacity(0.06))
+                    .foregroundColor(Color(red: 0.941, green: 0.843, blue: 0.549))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color(red: 0.831, green: 0.659, blue: 0.263).opacity(0.4))
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+                .navigationDestination(isPresented: $showLiveSystem) {
+                    if let chart = liveChart, let data = liveBirthData {
+                        SolarSystemView(chart: chart, birthData: data)
+                            .navigationTitle("Solar System — Now")
+                    }
+                }
+
+                // Earth Orbit View (Geocentric)
+                Button(action: launchEarthOrbit) {
+                    HStack {
+                        Image(systemName: "globe.americas.fill")
+                        Text("Earth Orbit — Satellites")
+                            .font(.headline)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.white.opacity(0.06))
+                    .foregroundColor(Color(red: 0.549, green: 0.843, blue: 0.941))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.cyan.opacity(0.4))
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+                .navigationDestination(isPresented: $showEarthOrbit) {
+                    if let chart = liveChart {
+                        EarthOrbitView(initialDate: Date(), chart: chart)
+                    }
+                }
             }
             .padding()
         }
+    }
+
+    private func launchLiveView() {
+        let now = Date()
+        let data = BirthData(
+            name: "Now",
+            date: now,
+            latitude: 29.5502, // JSC, Houston
+            longitude: -95.0980,
+            timeZoneOffset: 0
+        )
+        let chart = EphemerisEngine.computeChart(birthData: data)
+        liveBirthData = data
+        liveChart = chart
+        showLiveSystem = true
+    }
+
+    private func launchEarthOrbit() {
+        let now = Date()
+        let data = BirthData(
+            name: "Now",
+            date: now,
+            latitude: 29.5502,
+            longitude: -95.0980,
+            timeZoneOffset: 0
+        )
+        let chart = EphemerisEngine.computeChart(birthData: data)
+        liveBirthData = data
+        liveChart = chart
+        showEarthOrbit = true
     }
 
     private func formField<Content: View>(label: String, @ViewBuilder content: () -> Content) -> some View {

@@ -71,6 +71,9 @@ enum SolarSystemScene {
         // Place Earth
         let earthVisuals = planetVisuals["Earth"]!
         let earthNode = createPlanetNode(name: "Earth", radius: earthVisuals.radius, color: earthVisuals.color)
+        if let texImage = UIImage(named: "earth_texture") {
+            earthNode.geometry?.firstMaterial?.diffuse.contents = texImage
+        }
         let earthAngle = earthLon * .pi / 180
         earthNode.position = SCNVector3(
             Float(earthVisuals.orbitRadius * cos(earthAngle)),
