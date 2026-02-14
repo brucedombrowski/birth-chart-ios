@@ -1,6 +1,6 @@
 # Birth Chart iOS: Algorithm Documentation
 
-**Version:** 1.0
+**Version:** 1.1
 **Date:** February 14, 2026
 **Author:** Documentation Agent
 
@@ -18,6 +18,11 @@ This document provides comprehensive technical documentation of all computationa
 6. [Satellite Orbital Mechanics](#6-satellite-orbital-mechanics)
 7. [3D Visualization Scaling](#7-3d-visualization-scaling)
 8. [ISS Acquisition of Signal (AOS) Cone](#8-iss-acquisition-of-signal-aos-cone)
+9. [Constellation Star Field](#9-constellation-star-field)
+10. [Precession of the Equinoxes](#10-precession-of-the-equinoxes)
+11. [Historical Satellite Filtering](#11-historical-satellite-filtering)
+12. [Pressure-Based Time Throttle](#12-pressure-based-time-throttle)
+13. [ISS Ground Position at Birth](#13-iss-ground-position-at-birth)
 
 ---
 
@@ -1046,6 +1051,166 @@ For actual ISS tracking:
 
 ---
 
+## 9. Constellation Star Field
+
+**Source:** `/BirthChart/SceneKit/StarFieldBuilder.swift` and `/BirthChart/Models/ConstellationData.swift`
+
+### 9.1 Star Database
+- 97 stars loaded from stars.json
+- Each star has: id, name, constellation, raDeg (0-360), decDeg (-90 to +90), magnitude
+- Stars placed on celestial sphere at radius 80 scene units
+- Size scales with magnitude: mag < 0 → 0.5, mag < 1 → 0.35, mag < 2 → 0.25, mag < 3 → 0.18, default → 0.12
+- Brightness (emission intensity) also scales with magnitude
+
+### 9.2 Equatorial to 3D Position Conversion
+Algorithm to convert RA/Dec to 3D position on celestial sphere:
+```
+x = R * cos(dec) * cos(ra)
+y = R * sin(dec)
+z = R * cos(dec) * sin(ra)
+```
+Where R = 80 (sphereRadius), ra and dec in radians.
+
+Implementation: `StarFieldBuilder.position(raDeg:decDeg:precessionRad:)`
+
+### 9.3 Constellation Line Rendering
+- 22 constellations loaded from constellation_lines.json
+- Each constellation has: name, abbreviation, lines (pairs of star IDs), labelStarId
+- Lines rendered as thin SCNCylinder geometry (radius 0.04) oriented between two star positions
+- Cylinder orientation computed via cross product of cylinder's default Y-axis with the direction vector between stars
+- Labels use SCNText with SCNBillboardConstraint (always face camera)
+
+### 9.4 Cylinder Orientation Algorithm
+To orient a cylinder between two 3D points:
+```
+direction = p2 - p1
+length = |direction|
+midpoint = (p1 + p2) / 2
+
+up = (0, 1, 0)  // SCNCylinder default axis
+cross = up × direction
+crossLen = |cross|
+dot = up · direction
+
+if crossLen > 0.0001:
+    angle = atan2(crossLen, dot)
+    rotation = SCNVector4(cross.x/crossLen, cross.y/crossLen, cross.z/crossLen, angle)
+else if dot < 0:
+    // Anti-parallel case
+    eulerAngles.x = π
+```
+
+---
+
+## 10. Precession of the Equinoxes
+
+**Source:** `/BirthChart/Models/ConstellationData.swift`
+
+### 10.1 Precession Cycle
+- Full cycle: ~25,772 years
+- Rate: 360° / 25,772 years ≈ 0.01396°/year
+- Cause: Earth's rotational axis wobbles like a gyroscope due to gravitational torques from Sun and Moon on Earth's equatorial bulge
+
+### 10.2 Precession Angle Computation
+```
+years_since_J2000 = (date - J2000_epoch) / (365.25 * 86400)
+precession_radians = years_since_J2000 * (360.0 / 25772.0) * π / 180
+```
+
+Implementation: `Precession.angle(at:)`
+
+The precession is applied as a rotation around the Y-axis (celestial pole) of the star field:
+```
+x_new = x * cos(p) - z * sin(p)
+z_new = x * sin(p) + z * cos(p)
+y_new = y  (unchanged)
+```
+
+This is a simplification — true precession rotates around the ecliptic pole (tilted 23.44° from celestial pole), but the Y-axis approximation works well for visualization purposes.
+
+### 10.3 Astrological Ages
+Each age lasts ~2,148 years (25,772 / 12). The age is determined by which zodiac constellation the vernal equinox falls in. The equinox precesses backward through the zodiac:
+
+| Age | Approximate Years (CE) |
+|-----|----------------------|
+| Gemini | < -4000 |
+| Taurus | -4000 to -2000 |
+| Aries | -2000 to -100 |
+| Pisces | -100 to 2100 |
+| Aquarius | 2100 to 4200 |
+| Capricorn | 4200 to 6400 |
+| (continues...) | ... |
+
+Implementation: `Precession.astrologicalAge(at:)`
+
+### 10.4 Vernal Equinox Marker
+A fixed yellow sphere at RA=0°, Dec=0° (without precession applied) marks the vernal equinox point on the ecliptic. As stars precess, this marker stays fixed, visually demonstrating how the equinox point shifts relative to the background stars.
+
+### 10.5 Dynamic Precession Update
+When time-scrubbing, `StarFieldBuilder.updatePrecession(node:date:)` recalculates all star positions and rebuilds constellation lines. Old constellation lines and labels are removed and rebuilt each update to reflect new positions.
+
+---
+
+## 11. Historical Satellite Filtering
+
+**Source:** `/BirthChart/Models/OrbitalObject.swift`
+
+### 11.1 Launch Year Database
+Each satellite in satellites.json has a `launchYear: Int?` field. The `SatelliteDatabase.active(at:)` method filters satellites by comparing the viewed year against each satellite's launch year.
+
+### 11.2 Visibility Update
+`GeocentricScene.updateVisibility(in:activeIDs:)` shows/hides satellite SceneKit nodes based on the filtered set. Rewinding to before 1957 (Sputnik) results in an empty sky.
+
+---
+
+## 12. Pressure-Based Time Throttle
+
+**Source:** `/BirthChart/Views/EarthOrbitView.swift`
+
+### 12.1 DualSense Trigger Analog Input
+The DualSense L2/R2 triggers provide analog values from 0.0 (released) to 1.0 (fully pressed). The pressure directly maps to time scrub speed:
+
+| Trigger Pressure | Speed |
+|-----------------|-------|
+| < 25% | 1 day/sec |
+| 25-50% | 1 month/sec |
+| 50-75% | 1 year/sec |
+| 75-90% | 1 decade/sec |
+| 90-100% | 1 century/sec |
+
+R2 = forward in time, L2 = backward. When both are pressed simultaneously, the net offset is `R2_pressure * speed - L2_pressure * speed`.
+
+### 12.2 Real-Time Advancement
+When no triggers are pressed and the simulation is not paused, time advances at 1x real-time speed:
+```
+realDays = dt / 86400.0  // frame delta time converted to days
+timeOffsetDays += realDays
+```
+
+Satellite positions update every ~1 second in real-time mode.
+
+---
+
+## 13. ISS Ground Position at Birth
+
+**Source:** `/BirthChart/Models/OrbitalObject.swift`
+
+### 13.1 Ground Position Computation
+Uses Keplerian orbital mechanics to compute ISS position at any date, then converts ECI coordinates to geographic coordinates:
+
+```
+1. Compute ISS orbital position at birth date (see Section 6)
+2. Convert ECI (x,y,z) to geographic coordinates:
+   - latitude = arcsin(z / r) * 180/π
+   - GMST = Greenwich Mean Sidereal Time at birth
+   - longitude = (atan2(y, x) - GMST) * 180/π, normalized to [-180, 180]
+```
+
+### 13.2 Region Name Lookup
+`OrbitalObject.regionName(latitude:longitude:)` provides approximate geographic region names (e.g., "over the North Pacific Ocean", "over Central Africa") based on latitude/longitude ranges.
+
+---
+
 ## Appendices
 
 ### A. Coordinate System Conventions
@@ -1084,6 +1249,9 @@ For actual ISS tracking:
 | Moon phase | ±1 hour | Phase name |
 | Aspect orbs | 0.01° | Aspect detection |
 | Satellite positions (1 day) | ~1 km | Visualization |
+| Star positions (J2000) | < 0.01° | Constellation visualization |
+| Precession (visual) | ~1° per century | Night sky demonstration |
+| ISS ground position | ~100 km | Region identification |
 
 **Note:** 1 zodiac sign = 30°, so errors < 1° are typically acceptable for astrological interpretation. For precise astronomical work, higher-order corrections (nutation, aberration, light-time, ΔT) would be required.
 
@@ -1108,6 +1276,17 @@ For actual ISS tracking:
 ---
 
 ### D. Version History
+
+**Version 1.1** (February 14, 2026)
+- Added constellation star field (97 stars, 22 constellations)
+- Added precession of the equinoxes (~25,772-year cycle)
+- Added astrological age computation and display
+- Added historical satellite filtering by launch year
+- Added pressure-based time throttle (DualSense analog triggers)
+- Added real-time satellite orbit advancement
+- Added pause/play toggle (Circle button)
+- Added ISS cupola camera view (Square button)
+- Added ISS ground position at birth computation
 
 **Version 1.0** (February 14, 2026)
 - Initial comprehensive documentation
