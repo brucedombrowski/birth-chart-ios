@@ -24,6 +24,9 @@
 		A1000015000000000000000F /* SolarSystemScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000015000000000000000F; };
 		A10000160000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000160000000000000010; };
 		A10000170000000000000011 /* GameControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000180000000000000012; };
+		A10000180000000000000013 /* SpaceLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000190000000000000013; };
+		A10000190000000000000014 /* LaunchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000020000000000000001A; };
+		A1000020000000000000001A /* launches.json in Resources */ = {isa = PBXBuildFile; fileRef = A2000021000000000000001B; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		A20000160000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20000170000000000000011 /* BirthChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20000180000000000000012 /* GameControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerManager.swift; sourceTree = "<group>"; };
+		A20000190000000000000013 /* SpaceLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceLaunch.swift; sourceTree = "<group>"; };
+		A2000020000000000000001A /* LaunchHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchHistoryView.swift; sourceTree = "<group>"; };
+		A2000021000000000000001B /* launches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launches.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -85,6 +91,7 @@
 				A20000070000000000000007 /* CelestialBody.swift */,
 				A20000080000000000000008 /* Aspect.swift */,
 				A20000090000000000000009 /* BirthChart.swift */,
+				A20000190000000000000013 /* SpaceLaunch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +115,7 @@
 				A20000030000000000000003 /* ChartInputView.swift */,
 				A20000040000000000000004 /* ChartResultView.swift */,
 				A20000050000000000000005 /* SolarSystemView.swift */,
+				A2000020000000000000001A /* LaunchHistoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A20000160000000000000010 /* Assets.xcassets */,
+				A2000021000000000000001B /* launches.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -209,6 +218,8 @@
 				A1000014000000000000000E /* AspectDetector.swift in Sources */,
 				A1000015000000000000000F /* SolarSystemScene.swift in Sources */,
 				A10000170000000000000011 /* GameControllerManager.swift in Sources */,
+				A10000180000000000000013 /* SpaceLaunch.swift in Sources */,
+				A10000190000000000000014 /* LaunchHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10000160000000000000010 /* Assets.xcassets in Resources */,
+				A1000020000000000000001A /* launches.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

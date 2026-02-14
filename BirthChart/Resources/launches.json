@@ -1,0 +1,1850 @@
+[
+  {
+    "id": "1957-001A",
+    "name": "Sputnik 1",
+    "date": "1957-10-04T19:28:34Z",
+    "program": "Dawn of Space Age",
+    "detail": "First artificial Earth satellite, launched by the Soviet Union. Transmitted radio signals for 22 days and orbited for 3 months before atmospheric reentry.",
+    "icon": "\ud83d\udef0\ufe0f",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1957-001A"
+  },
+  {
+    "id": "1957-002A",
+    "name": "Sputnik 2",
+    "date": "1957-11-03T02:30:00Z",
+    "program": "Dawn of Space Age",
+    "detail": "Carried Laika, a dog, becoming the first spacecraft to carry a living animal into orbit. Proved biological cargo could survive launch and weightlessness.",
+    "icon": "\ud83d\udc15",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1957-002A"
+  },
+  {
+    "id": "1958-001A",
+    "name": "Explorer 1",
+    "date": "1958-01-31T22:48:00Z",
+    "program": "Dawn of Space Age",
+    "detail": "First U.S. satellite, discovered the Van Allen radiation belts. Launched on a Juno I rocket from Cape Canaveral.",
+    "icon": "\ud83c\uddfa\ud83c\uddf8",
+    "launchSite": {
+      "name": "Cape Canaveral LC-26, Florida",
+      "latitude": 28.4689,
+      "longitude": -80.5323
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-001A"
+  },
+  {
+    "id": "1958-002B",
+    "name": "Vanguard 1",
+    "date": "1958-03-17T12:15:41Z",
+    "program": "Dawn of Space Age",
+    "detail": "Fourth artificial satellite launched, oldest satellite still in orbit. Provided data on Earth's shape and upper atmospheric density.",
+    "icon": "\ud83d\udce1",
+    "launchSite": {
+      "name": "Cape Canaveral LC-18A, Florida",
+      "latitude": 28.4494,
+      "longitude": -80.5613
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1958-002B"
+  },
+  {
+    "id": "1959-012A",
+    "name": "Luna 1",
+    "date": "1959-01-02T16:41:21Z",
+    "program": "Dawn of Space Age",
+    "detail": "First spacecraft to reach escape velocity from Earth and fly by the Moon. Detected solar wind and measured radiation belts.",
+    "icon": "\ud83c\udf19",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1959-012A"
+  },
+  {
+    "id": "1959-014A",
+    "name": "Luna 2",
+    "date": "1959-09-12T06:39:42Z",
+    "program": "Dawn of Space Age",
+    "detail": "First spacecraft to impact the Moon, striking the surface east of Mare Serenitatis. Confirmed the Moon has no magnetic field.",
+    "icon": "\ud83d\udca5",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1959-014A"
+  },
+  {
+    "id": "1959-008A",
+    "name": "Luna 3",
+    "date": "1959-10-04T00:43:40Z",
+    "program": "Dawn of Space Age",
+    "detail": "First spacecraft to photograph the far side of the Moon. Revealed mountainous terrain and few maria on the lunar far side.",
+    "icon": "\ud83d\udcf7",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1959-008A"
+  },
+  {
+    "id": "1960-002A",
+    "name": "TIROS-1",
+    "date": "1960-04-01T11:40:09Z",
+    "program": "Dawn of Space Age",
+    "detail": "First successful weather satellite, transmitted 22,952 photos of Earth's cloud cover. Proved viability of monitoring weather from space.",
+    "icon": "\ud83c\udf26\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1960-002A"
+  },
+  {
+    "id": "1960-009A",
+    "name": "Echo 1",
+    "date": "1960-08-12T09:39:42Z",
+    "program": "Dawn of Space Age",
+    "detail": "First passive communications satellite, a 100-foot diameter metalized balloon that reflected radio signals between ground stations.",
+    "icon": "\ud83c\udf88",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1960-009A"
+  },
+  {
+    "id": "1961-012A",
+    "name": "Vostok 1",
+    "date": "1961-04-12T06:07:00Z",
+    "program": "Vostok & Voskhod",
+    "detail": "Yuri Gagarin became the first human in space, completing one orbit of Earth in 108 minutes. Historic achievement for human spaceflight.",
+    "icon": "\ud83d\udc68\u200d\ud83d\ude80",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1961-012A"
+  },
+  {
+    "id": "1961-015A",
+    "name": "Mercury-Redstone 3",
+    "date": "1961-05-05T14:34:13Z",
+    "program": "Mercury",
+    "detail": "Alan Shepard became the first American in space on a 15-minute suborbital flight reaching 116 miles altitude.",
+    "icon": "\ud83d\ude80",
+    "launchSite": {
+      "name": "Cape Canaveral LC-5, Florida",
+      "latitude": 28.4672,
+      "longitude": -80.5437
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1961-015A"
+  },
+  {
+    "id": "1961-017A",
+    "name": "Mercury-Redstone 4",
+    "date": "1961-07-21T12:20:36Z",
+    "program": "Mercury",
+    "detail": "Gus Grissom's suborbital flight. Capsule Liberty Bell 7 sank after splashdown when hatch prematurely opened, recovered in 1999.",
+    "icon": "\ud83d\udd14",
+    "launchSite": {
+      "name": "Cape Canaveral LC-5, Florida",
+      "latitude": 28.4672,
+      "longitude": -80.5437
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1961-017A"
+  },
+  {
+    "id": "1961-019A",
+    "name": "Vostok 2",
+    "date": "1961-08-06T06:00:00Z",
+    "program": "Vostok & Voskhod",
+    "detail": "Gherman Titov spent over 25 hours in space, completing 17 orbits. First person to sleep in space and experience space sickness.",
+    "icon": "\ud83d\ude34",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1961-019A"
+  },
+  {
+    "id": "1962-003A",
+    "name": "Mercury-Atlas 6",
+    "date": "1962-02-20T14:47:39Z",
+    "program": "Mercury",
+    "detail": "John Glenn became the first American to orbit Earth, completing three orbits in Friendship 7. National hero's welcome upon return.",
+    "icon": "\ud83c\udf0d",
+    "launchSite": {
+      "name": "Cape Canaveral LC-14, Florida",
+      "latitude": 28.4906,
+      "longitude": -80.5499
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1962-003A"
+  },
+  {
+    "id": "1962-041A",
+    "name": "Mercury-Atlas 7",
+    "date": "1962-05-24T12:45:16Z",
+    "program": "Mercury",
+    "detail": "Scott Carpenter's three-orbit mission in Aurora 7. Overshot landing zone by 250 miles due to manual control issues.",
+    "icon": "\ud83c\udf05",
+    "launchSite": {
+      "name": "Cape Canaveral LC-14, Florida",
+      "latitude": 28.4906,
+      "longitude": -80.5499
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1962-041A"
+  },
+  {
+    "id": "1962-025A",
+    "name": "Telstar 1",
+    "date": "1962-07-10T08:35:00Z",
+    "program": "Dawn of Space Age",
+    "detail": "First active communications satellite to relay television signals across the Atlantic. Enabled first live transatlantic TV broadcast.",
+    "icon": "\ud83d\udcfa",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1962-025A"
+  },
+  {
+    "id": "1962-034A",
+    "name": "Vostok 3",
+    "date": "1962-08-11T08:24:00Z",
+    "program": "Vostok & Voskhod",
+    "detail": "Andriyan Nikolayev orbited Earth 64 times. Part of first group spaceflight mission with Vostok 4, coming within 6.5 km.",
+    "icon": "\ud83d\udc68\u200d\ud83d\ude80",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1962-034A"
+  },
+  {
+    "id": "1962-035A",
+    "name": "Vostok 4",
+    "date": "1962-08-12T08:02:00Z",
+    "program": "Vostok & Voskhod",
+    "detail": "Pavel Popovich in first dual spaceflight with Vostok 3. Completed 48 orbits, demonstrating radio communication between spacecraft.",
+    "icon": "\ud83d\udcfb",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1962-035A"
+  },
+  {
+    "id": "1962-028A",
+    "name": "Mariner 2",
+    "date": "1962-08-27T06:53:14Z",
+    "program": "Planetary Probes",
+    "detail": "First successful interplanetary spacecraft. Flew by Venus at 34,773 km, measuring temperature and discovering solar wind.",
+    "icon": "\u2640\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-12, Florida",
+      "latitude": 28.4418,
+      "longitude": -80.5628
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1962-028A"
+  },
+  {
+    "id": "1962-047A",
+    "name": "Mercury-Atlas 8",
+    "date": "1962-10-03T12:15:11Z",
+    "program": "Mercury",
+    "detail": "Wally Schirra completed six orbits in Sigma 7, demonstrating precise spacecraft control and fuel conservation techniques.",
+    "icon": "\u2b50",
+    "launchSite": {
+      "name": "Cape Canaveral LC-14, Florida",
+      "latitude": 28.4906,
+      "longitude": -80.5499
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1962-047A"
+  },
+  {
+    "id": "1963-030A",
+    "name": "Mercury-Atlas 9",
+    "date": "1963-05-15T13:04:13Z",
+    "program": "Mercury",
+    "detail": "Gordon Cooper's 22-orbit mission in Faith 7, final Mercury flight. Longest U.S. solo spaceflight until Skylab.",
+    "icon": "\ud83d\udef8",
+    "launchSite": {
+      "name": "Cape Canaveral LC-14, Florida",
+      "latitude": 28.4906,
+      "longitude": -80.5499
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1963-030A"
+  },
+  {
+    "id": "1963-023A",
+    "name": "Vostok 5",
+    "date": "1963-06-14T14:58:58Z",
+    "program": "Vostok & Voskhod",
+    "detail": "Valery Bykovsky's record-setting 5-day solo flight, 81 orbits. Record stood until Soyuz 9 in 1970.",
+    "icon": "\u23f1\ufe0f",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1963-023A"
+  },
+  {
+    "id": "1963-024A",
+    "name": "Vostok 6",
+    "date": "1963-06-16T12:29:51Z",
+    "program": "Vostok & Voskhod",
+    "detail": "Valentina Tereshkova became the first woman in space, completing 48 orbits. Remains only woman to fly solo space mission.",
+    "icon": "\ud83d\udc69\u200d\ud83d\ude80",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1963-024A"
+  },
+  {
+    "id": "1963-036A",
+    "name": "Syncom 3",
+    "date": "1964-08-19T12:26:00Z",
+    "program": "Dawn of Space Age",
+    "detail": "First geostationary satellite, positioned over the International Date Line. Broadcast 1964 Tokyo Olympics worldwide.",
+    "icon": "\ud83c\udfc5",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1963-036A"
+  },
+  {
+    "id": "1964-065A",
+    "name": "Voskhod 1",
+    "date": "1964-10-12T07:30:01Z",
+    "program": "Vostok & Voskhod",
+    "detail": "First multi-person crew (3 cosmonauts). Vladimir Komarov, Konstantin Feoktistov, Boris Yegorov completed 16 orbits.",
+    "icon": "\ud83d\udc65",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1964-065A"
+  },
+  {
+    "id": "1964-077A",
+    "name": "Mariner 4",
+    "date": "1964-11-28T14:22:01Z",
+    "program": "Planetary Probes",
+    "detail": "First spacecraft to fly by Mars, returning 22 close-up photos revealing cratered surface. Changed understanding of Mars.",
+    "icon": "\u2642\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-12, Florida",
+      "latitude": 28.4418,
+      "longitude": -80.5628
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1964-077A"
+  },
+  {
+    "id": "1965-022A",
+    "name": "Voskhod 2",
+    "date": "1965-03-18T07:00:00Z",
+    "program": "Vostok & Voskhod",
+    "detail": "Alexei Leonov performed first spacewalk (EVA), 12 minutes outside spacecraft. Pavel Belyayev piloted. Faced near-fatal reentry issues.",
+    "icon": "\ud83d\udeb6",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-022A"
+  },
+  {
+    "id": "1965-024A",
+    "name": "Gemini 3",
+    "date": "1965-03-23T14:24:00Z",
+    "program": "Gemini",
+    "detail": "First crewed Gemini mission. Gus Grissom and John Young completed 3 orbits, testing manual maneuvers and orbit changes.",
+    "icon": "\u264a",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-024A"
+  },
+  {
+    "id": "1965-043A",
+    "name": "Gemini 4",
+    "date": "1965-06-03T15:15:59Z",
+    "program": "Gemini",
+    "detail": "Ed White performed America's first spacewalk, 23 minutes. James McDivitt commanded 4-day mission with 62 orbits.",
+    "icon": "\ud83d\udeb6\u200d\u2642\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-043A"
+  },
+  {
+    "id": "1965-068A",
+    "name": "Gemini 5",
+    "date": "1965-08-21T13:59:59Z",
+    "program": "Gemini",
+    "detail": "Gordon Cooper and Charles Conrad completed 8-day endurance mission, 120 orbits. Proved human capability for lunar mission duration.",
+    "icon": "\u23f3",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-068A"
+  },
+  {
+    "id": "1965-100A",
+    "name": "Gemini 7",
+    "date": "1965-12-04T19:30:03Z",
+    "program": "Gemini",
+    "detail": "Frank Borman and Jim Lovell's 14-day endurance mission. Rendezvous target for Gemini 6A, coming within 1 foot.",
+    "icon": "\ud83c\udfaf",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-100A"
+  },
+  {
+    "id": "1965-104A",
+    "name": "Gemini 6A",
+    "date": "1965-12-15T13:37:26Z",
+    "program": "Gemini",
+    "detail": "Wally Schirra and Tom Stafford achieved first space rendezvous with Gemini 7. Station-kept for over 5 hours.",
+    "icon": "\ud83e\udd1d",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-104A"
+  },
+  {
+    "id": "1966-020A",
+    "name": "Gemini 8",
+    "date": "1966-03-16T16:41:02Z",
+    "program": "Gemini",
+    "detail": "Neil Armstrong and David Scott achieved first docking in space with Agena target. Emergency abort due to thruster malfunction.",
+    "icon": "\ud83d\udd17",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1966-020A"
+  },
+  {
+    "id": "1966-047A",
+    "name": "Gemini 9A",
+    "date": "1966-06-03T13:39:33Z",
+    "program": "Gemini",
+    "detail": "Tom Stafford and Gene Cernan. Rendezvous but couldn't dock due to shroud failure. Cernan's 2-hour EVA exhausting.",
+    "icon": "\ud83d\ude13",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1966-047A"
+  },
+  {
+    "id": "1966-066A",
+    "name": "Gemini 10",
+    "date": "1966-07-18T22:20:26Z",
+    "program": "Gemini",
+    "detail": "John Young and Michael Collins rendezvoused with two Agena targets. Collins performed standup and umbilical EVAs.",
+    "icon": "\ud83c\udfaa",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1966-066A"
+  },
+  {
+    "id": "1966-081A",
+    "name": "Gemini 11",
+    "date": "1966-09-12T14:42:26Z",
+    "program": "Gemini",
+    "detail": "Pete Conrad and Dick Gordon achieved first-orbit rendezvous, reached record altitude of 1,369 km using Agena propulsion.",
+    "icon": "\ud83d\udcc8",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1966-081A"
+  },
+  {
+    "id": "1966-104A",
+    "name": "Gemini 12",
+    "date": "1966-11-11T20:46:33Z",
+    "program": "Gemini",
+    "detail": "Final Gemini mission. Jim Lovell and Buzz Aldrin perfected EVA techniques with 5.5 hours outside, proving viability for Apollo.",
+    "icon": "\u2705",
+    "launchSite": {
+      "name": "Cape Canaveral LC-19, Florida",
+      "latitude": 28.5065,
+      "longitude": -80.5542
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1966-104A"
+  },
+  {
+    "id": "APOLLO-1",
+    "name": "Apollo 1",
+    "date": "1967-01-27T23:31:00Z",
+    "program": "Apollo",
+    "detail": "Tragedy: Gus Grissom, Ed White, Roger Chaffee killed in command module fire during ground test. Led to major spacecraft redesign.",
+    "icon": "\ud83d\udd6f\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-34, Florida",
+      "latitude": 28.5219,
+      "longitude": -80.5612
+    },
+    "source": "NASA History Division"
+  },
+  {
+    "id": "1967-113A",
+    "name": "Apollo 4",
+    "date": "1967-11-09T12:00:01Z",
+    "program": "Apollo",
+    "detail": "First uncrewed test of Saturn V rocket. Successful demonstration of launch vehicle and command module heat shield.",
+    "icon": "\ud83d\ude80",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1967-113A"
+  },
+  {
+    "id": "1968-089A",
+    "name": "Apollo 7",
+    "date": "1968-10-11T15:02:45Z",
+    "program": "Apollo",
+    "detail": "First crewed Apollo mission. Wally Schirra, Donn Eisele, Walter Cunningham completed 11-day Earth orbit shakedown, 163 orbits.",
+    "icon": "\ud83c\udf0e",
+    "launchSite": {
+      "name": "Cape Canaveral LC-34, Florida",
+      "latitude": 28.5219,
+      "longitude": -80.5612
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1968-089A"
+  },
+  {
+    "id": "1968-118A",
+    "name": "Apollo 8",
+    "date": "1968-12-21T12:51:00Z",
+    "program": "Apollo",
+    "detail": "First crewed mission to Moon. Frank Borman, Jim Lovell, Bill Anders orbited Moon 10 times, Earthrise photo, Christmas Eve broadcast.",
+    "icon": "\ud83c\udf15",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1968-118A"
+  },
+  {
+    "id": "1969-018A",
+    "name": "Apollo 9",
+    "date": "1969-03-03T16:00:00Z",
+    "program": "Apollo",
+    "detail": "First crewed test of Lunar Module in Earth orbit. Jim McDivitt, Dave Scott, Rusty Schweickart. 10-day mission testing rendezvous.",
+    "icon": "\ud83d\udd27",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-018A"
+  },
+  {
+    "id": "1969-043A",
+    "name": "Apollo 10",
+    "date": "1969-05-18T16:49:00Z",
+    "program": "Apollo",
+    "detail": "Dress rehearsal for landing. Tom Stafford, John Young, Gene Cernan. LM descended to 15.6 km above Moon, fastest humans ever.",
+    "icon": "\ud83c\udfce\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-043A"
+  },
+  {
+    "id": "1969-059A",
+    "name": "Apollo 11",
+    "date": "1969-07-16T13:32:00Z",
+    "program": "Apollo",
+    "detail": "First lunar landing. Neil Armstrong and Buzz Aldrin walked on Moon while Michael Collins orbited. 'That's one small step for man...'",
+    "icon": "\ud83d\udc68\u200d\ud83d\ude80\ud83c\udf11",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059A"
+  },
+  {
+    "id": "1969-085A",
+    "name": "Apollo 12",
+    "date": "1969-11-14T16:22:00Z",
+    "program": "Apollo",
+    "detail": "Pete Conrad and Alan Bean landed in Ocean of Storms, pinpoint landing near Surveyor 3. Dick Gordon orbited. Lightning struck at launch.",
+    "icon": "\u26a1",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-085A"
+  },
+  {
+    "id": "1970-029A",
+    "name": "Apollo 13",
+    "date": "1970-04-11T19:13:00Z",
+    "program": "Apollo",
+    "detail": "'Houston, we've had a problem.' Oxygen tank explosion aborted landing. Jim Lovell, Jack Swigert, Fred Haise survived harrowing return.",
+    "icon": "\ud83d\udca5",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1970-029A"
+  },
+  {
+    "id": "1970-068A",
+    "name": "Venera 7",
+    "date": "1970-08-17T05:38:22Z",
+    "program": "Planetary Probes",
+    "detail": "First spacecraft to successfully transmit data from another planet's surface, Venus. Survived 475\u00b0C heat for 23 minutes.",
+    "icon": "\u2640\ufe0f",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1970-068A"
+  },
+  {
+    "id": "1971-008A",
+    "name": "Apollo 14",
+    "date": "1971-01-31T21:03:02Z",
+    "program": "Apollo",
+    "detail": "Alan Shepard and Ed Mitchell landed in Fra Mauro highlands. Shepard hit golf balls on Moon. Stuart Roosa orbited.",
+    "icon": "\u26f3",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-008A"
+  },
+  {
+    "id": "1971-032A",
+    "name": "Salyut 1",
+    "date": "1971-04-19T01:40:00Z",
+    "program": "Skylab & Salyut",
+    "detail": "First space station. Soyuz 11 crew spent 23 days aboard but died during reentry due to valve failure.",
+    "icon": "\ud83c\udfe0",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-032A"
+  },
+  {
+    "id": "1971-053A",
+    "name": "Mars 3",
+    "date": "1971-05-28T15:26:30Z",
+    "program": "Planetary Probes",
+    "detail": "First spacecraft to soft-land on Mars. Lander transmitted for 14.5 seconds before contact lost. Orbiter operated 8 months.",
+    "icon": "\ud83d\udeec",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-053A"
+  },
+  {
+    "id": "1971-042A",
+    "name": "Mariner 9",
+    "date": "1971-05-30T22:23:04Z",
+    "program": "Planetary Probes",
+    "detail": "First spacecraft to orbit another planet. Mapped 85% of Mars, discovered Olympus Mons and Valles Marineris.",
+    "icon": "\ud83d\uddfa\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36B, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-042A"
+  },
+  {
+    "id": "1971-063A",
+    "name": "Apollo 15",
+    "date": "1971-07-26T13:34:00Z",
+    "program": "Apollo",
+    "detail": "First J-mission with Lunar Roving Vehicle. Dave Scott and Jim Irwin explored Hadley Rille. Al Worden orbited, conducted deep-space EVA.",
+    "icon": "\ud83d\ude99",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A"
+  },
+  {
+    "id": "1972-012A",
+    "name": "Pioneer 10",
+    "date": "1972-03-02T01:49:00Z",
+    "program": "Planetary Probes",
+    "detail": "First spacecraft through asteroid belt and to Jupiter. Carries plaque for extraterrestrials. Left solar system in 1983.",
+    "icon": "\ud83c\udf0c",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36A, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-012A"
+  },
+  {
+    "id": "1972-031A",
+    "name": "Apollo 16",
+    "date": "1972-04-16T17:54:00Z",
+    "program": "Apollo",
+    "detail": "John Young and Charlie Duke explored Descartes Highlands with rover. Ken Mattingly orbited. Lunar UV astronomy experiments.",
+    "icon": "\ud83d\udd2c",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-031A"
+  },
+  {
+    "id": "1972-096A",
+    "name": "Apollo 17",
+    "date": "1972-12-07T05:33:00Z",
+    "program": "Apollo",
+    "detail": "Final Apollo lunar mission. Gene Cernan and Harrison Schmitt (geologist) explored Taurus-Littrow. Ron Evans orbited. Last humans beyond LEO.",
+    "icon": "\ud83c\udf19",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-096A"
+  },
+  {
+    "id": "1973-027A",
+    "name": "Pioneer 11",
+    "date": "1973-04-06T02:11:00Z",
+    "program": "Planetary Probes",
+    "detail": "Studied Jupiter then first to Saturn, discovered F-ring. Used Jupiter gravity assist. Left solar system in 1990.",
+    "icon": "\ud83e\ude90",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36A, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-027A"
+  },
+  {
+    "id": "1973-019A",
+    "name": "Skylab",
+    "date": "1973-05-14T17:30:00Z",
+    "program": "Skylab & Salyut",
+    "detail": "America's first space station. Damaged during launch but repaired by crew. Hosted three crews totaling 171 days.",
+    "icon": "\ud83d\udef0\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-019A"
+  },
+  {
+    "id": "1973-032A",
+    "name": "Skylab 2",
+    "date": "1973-05-25T13:00:00Z",
+    "program": "Skylab & Salyut",
+    "detail": "First Skylab crew. Pete Conrad, Joe Kerwin, Paul Weitz deployed sunshade to save station, spent 28 days conducting experiments.",
+    "icon": "\u2600\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-032A"
+  },
+  {
+    "id": "1973-050A",
+    "name": "Skylab 3",
+    "date": "1973-07-28T11:10:50Z",
+    "program": "Skylab & Salyut",
+    "detail": "Alan Bean, Jack Lousma, Owen Garriott spent 59 days aboard Skylab. Extensive solar astronomy and Earth observations.",
+    "icon": "\ud83d\udd2d",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-050A"
+  },
+  {
+    "id": "1973-085A",
+    "name": "Mariner 10",
+    "date": "1973-11-03T05:45:00Z",
+    "program": "Planetary Probes",
+    "detail": "First spacecraft to Mercury via Venus gravity assist. Mapped 45% of Mercury in three flybys. Pioneered gravity assist technique.",
+    "icon": "\u263f\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-085A"
+  },
+  {
+    "id": "1973-068A",
+    "name": "Skylab 4",
+    "date": "1973-11-16T14:01:23Z",
+    "program": "Skylab & Salyut",
+    "detail": "Final Skylab crew. Jerry Carr, Ed Gibson, Bill Pogue spent 84 days, record until Salyut. Observed Comet Kohoutek.",
+    "icon": "\u2604\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-068A"
+  },
+  {
+    "id": "1975-065B",
+    "name": "Apollo-Soyuz Test Project",
+    "date": "1975-07-15T19:50:00Z",
+    "program": "Skylab & Salyut",
+    "detail": "First international space rendezvous. Tom Stafford, Vance Brand, Deke Slayton docked with Alexei Leonov and Valery Kubasov's Soyuz 19.",
+    "icon": "\ud83e\udd1d",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "NASA History Division"
+  },
+  {
+    "id": "1975-065A",
+    "name": "Viking 1",
+    "date": "1975-08-20T21:22:00Z",
+    "program": "Planetary Probes",
+    "detail": "First successful Mars landing. Operated 6 years on surface, orbiter for 4. Searched for life, found none conclusively.",
+    "icon": "\ud83d\udd34",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-065A"
+  },
+  {
+    "id": "1975-077A",
+    "name": "Viking 2",
+    "date": "1975-09-09T18:39:00Z",
+    "program": "Planetary Probes",
+    "detail": "Second successful Mars lander, touched down in Utopia Planitia. Operated nearly 4 years, complemented Viking 1 data.",
+    "icon": "\ud83e\udd16",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-077A"
+  },
+  {
+    "id": "1977-076A",
+    "name": "Voyager 2",
+    "date": "1977-08-20T14:29:00Z",
+    "program": "Planetary Probes",
+    "detail": "Only spacecraft to visit Uranus and Neptune. Grand Tour of outer planets. Entered interstellar space 2018.",
+    "icon": "\ud83c\udf0a",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1977-076A"
+  },
+  {
+    "id": "1977-084A",
+    "name": "Voyager 1",
+    "date": "1977-09-05T12:56:00Z",
+    "program": "Planetary Probes",
+    "detail": "Explored Jupiter and Saturn. Now in interstellar space, farthest human-made object. Carries Golden Record for aliens.",
+    "icon": "\ud83d\udcbf",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1977-084A"
+  },
+  {
+    "id": "1981-034A",
+    "name": "STS-1",
+    "date": "1981-04-12T12:00:03Z",
+    "program": "Space Shuttle",
+    "detail": "First Space Shuttle mission. John Young and Bob Crippen aboard Columbia tested reusable spacecraft for 54 hours, 36 orbits.",
+    "icon": "\ud83d\ude80",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1982-110A",
+    "name": "STS-5",
+    "date": "1982-11-11T12:19:00Z",
+    "program": "Space Shuttle",
+    "detail": "First operational Shuttle mission. Vance Brand commanded Columbia, deployed two commercial satellites. First 4-person crew.",
+    "icon": "\ud83d\udce1",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1983-059A",
+    "name": "STS-7",
+    "date": "1983-06-18T11:33:00Z",
+    "program": "Space Shuttle",
+    "detail": "Sally Ride became first American woman in space aboard Challenger. Deployed satellites, operated SPAS-01 free-flyer.",
+    "icon": "\ud83d\udc69\u200d\ud83d\ude80",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1984-011A",
+    "name": "STS-41-B",
+    "date": "1984-02-03T13:00:00Z",
+    "program": "Space Shuttle",
+    "detail": "Bruce McCandless performed first untethered spacewalk using Manned Maneuvering Unit. 'I may be a malfunctioning satellite, but I'm having a great time!'",
+    "icon": "\ud83d\udeb6\u200d\u2642\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1986-003B",
+    "name": "STS-51-L",
+    "date": "1986-01-28T16:38:00Z",
+    "program": "Space Shuttle",
+    "detail": "Challenger disaster. Crew of 7 including teacher Christa McAuliffe killed 73 seconds after launch due to O-ring failure in cold weather.",
+    "icon": "\ud83d\udd4a\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "NASA History Division"
+  },
+  {
+    "id": "1986-003A",
+    "name": "Mir Core Module",
+    "date": "1986-02-19T21:28:23Z",
+    "program": "Space Stations",
+    "detail": "Soviet/Russian space station core. Continuously inhabited 1989-1999. Hosted international crews including Americans.",
+    "icon": "\ud83c\udfd7\ufe0f",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1986-003A"
+  },
+  {
+    "id": "1988-091A",
+    "name": "STS-26",
+    "date": "1988-09-29T15:37:00Z",
+    "program": "Space Shuttle",
+    "detail": "Return to Flight after Challenger. Discovery mission commanded by Rick Hauck deployed TDRS satellite. Successful 4-day mission.",
+    "icon": "\ud83e\udd85",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1989-033A",
+    "name": "Magellan",
+    "date": "1989-05-04T18:46:59Z",
+    "program": "Planetary Exploration",
+    "detail": "Mapped 98% of Venus surface with synthetic aperture radar from STS-30 Atlantis. Operated until 1994 when deliberately crashed.",
+    "icon": "\ud83d\uddfa\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1989-033A"
+  },
+  {
+    "id": "1989-084A",
+    "name": "Galileo",
+    "date": "1989-10-18T16:53:40Z",
+    "program": "Planetary Exploration",
+    "detail": "Orbited Jupiter 1995-2003. Discovered subsurface ocean on Europa, observed Shoemaker-Levy 9 impact. Deployed from STS-34 Atlantis.",
+    "icon": "\ud83c\udf0a",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1989-084A"
+  },
+  {
+    "id": "1990-037B",
+    "name": "STS-31",
+    "date": "1990-04-24T12:33:51Z",
+    "program": "Space Shuttle",
+    "detail": "Discovery deployed Hubble Space Telescope. Loren Shriver commanded. HST revolutionized astronomy despite initial mirror flaw.",
+    "icon": "\ud83d\udd2d",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1993-074A",
+    "name": "STS-61",
+    "date": "1993-12-02T09:27:00Z",
+    "program": "Space Shuttle",
+    "detail": "Hubble repair mission. Dick Covey commanded Endeavour. Five EVAs installed corrective optics (COSTAR), new solar arrays. Saved HST.",
+    "icon": "\ud83d\udd27",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1995-034A",
+    "name": "STS-71",
+    "date": "1995-06-27T19:32:19Z",
+    "program": "Space Shuttle",
+    "detail": "First Shuttle-Mir docking. Atlantis delivered Norm Thagard home after 115 days on Mir. Began Shuttle-Mir program cooperation.",
+    "icon": "\ud83e\udd1d",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1996-053A",
+    "name": "Mars Global Surveyor",
+    "date": "1996-11-07T17:00:49Z",
+    "program": "Planetary Exploration",
+    "detail": "Mapped entire Martian surface in unprecedented detail. Operated until 2006. Confirmed past liquid water evidence.",
+    "icon": "\ud83d\uddfa\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-053A"
+  },
+  {
+    "id": "1996-068A",
+    "name": "Mars Pathfinder",
+    "date": "1996-12-04T06:58:07Z",
+    "program": "Planetary Exploration",
+    "detail": "Landed on Mars with Sojourner rover, first wheeled vehicle on another planet. Operated 83 sols, vastly exceeded mission goals.",
+    "icon": "\ud83d\ude97",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-068A"
+  },
+  {
+    "id": "1997-043A",
+    "name": "Cassini-Huygens",
+    "date": "1997-10-15T08:43:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Orbited Saturn 2004-2017. Huygens probe landed on Titan. Discovered methane lakes, geysers on Enceladus. Grand finale into Saturn.",
+    "icon": "\ud83e\ude90",
+    "launchSite": {
+      "name": "Cape Canaveral LC-40, Florida",
+      "latitude": 28.5618,
+      "longitude": -80.577
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1997-043A"
+  },
+  {
+    "id": "1998-061A",
+    "name": "Deep Space 1",
+    "date": "1998-10-24T12:08:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Tested ion propulsion engine, autonomous navigation, and other technologies. Flew by asteroid Braille and comet Borrelly.",
+    "icon": "\u26a1",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-061A"
+  },
+  {
+    "id": "1998-067A",
+    "name": "ISS Zarya",
+    "date": "1998-11-20T06:40:00Z",
+    "program": "Space Stations",
+    "detail": "First ISS module launched by Russia. Provided power and propulsion initially. Foundation of International Space Station.",
+    "icon": "\ud83c\udfd7\ufe0f",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-067A"
+  },
+  {
+    "id": "1998-069A",
+    "name": "STS-88",
+    "date": "1998-12-04T08:35:34Z",
+    "program": "Space Shuttle",
+    "detail": "Endeavour attached Unity node to Zarya, beginning ISS assembly. Bob Cabana commanded first ISS assembly flight.",
+    "icon": "\ud83d\udd17",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1999-003A",
+    "name": "Stardust",
+    "date": "1999-02-07T21:04:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Collected comet Wild 2 samples and returned to Earth 2006. First sample return from beyond Moon, brought pristine interstellar dust.",
+    "icon": "\ud83d\udcab",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1999-003A"
+  },
+  {
+    "id": "2000-034A",
+    "name": "ISS Expedition 1",
+    "date": "2000-10-31T07:52:47Z",
+    "program": "Space Stations",
+    "detail": "First permanent ISS crew. Bill Shepherd, Yuri Gidzenko, Sergei Krikalev arrived on Soyuz TM-31. Continuous habitation began.",
+    "icon": "\ud83d\udc68\u200d\ud83d\ude80\ud83d\udc68\u200d\ud83d\ude80\ud83d\udc68\u200d\ud83d\ude80",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://www.nasa.gov/mission_pages/station/expeditions/expedition1/"
+  },
+  {
+    "id": "2001-007A",
+    "name": "STS-98",
+    "date": "2001-02-07T23:13:02Z",
+    "program": "Space Stations",
+    "detail": "Atlantis delivered Destiny Laboratory Module to ISS. Ken Cockrell commanded. US science hub with 24 equipment racks.",
+    "icon": "\ud83d\udd2c",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2001-004A",
+    "name": "Genesis",
+    "date": "2001-08-08T16:13:40Z",
+    "program": "Planetary Exploration",
+    "detail": "Collected solar wind particles. Sample return capsule crash-landed 2004 but some samples recovered for analysis of Sun's composition.",
+    "icon": "\u2600\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2001-004A"
+  },
+  {
+    "id": "2003-004A",
+    "name": "STS-107",
+    "date": "2003-01-16T15:39:00Z",
+    "program": "Space Shuttle",
+    "detail": "Columbia disaster. Crew of 7 killed during reentry when wing damage from foam strike caused breakup. Led to Shuttle retirement decision.",
+    "icon": "\ud83d\udd4a\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA History Division"
+  },
+  {
+    "id": "2003-027A",
+    "name": "MER Spirit",
+    "date": "2003-06-10T17:58:47Z",
+    "program": "Planetary Exploration",
+    "detail": "Mars Exploration Rover landed in Gusev Crater. Planned 90 sols, operated over 2200 sols until 2010. Found evidence of ancient water.",
+    "icon": "\ud83e\udd16",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-027A"
+  },
+  {
+    "id": "2003-032A",
+    "name": "MER Opportunity",
+    "date": "2003-07-07T03:18:15Z",
+    "program": "Planetary Exploration",
+    "detail": "Mars rover landed in Meridiani Planum. Operated 14+ years, traveled 45 km. Discovered hematite spheres 'blueberries', lost in dust storm 2018.",
+    "icon": "\ud83d\udd35",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17B, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-032A"
+  },
+  {
+    "id": "2004-030A",
+    "name": "MESSENGER",
+    "date": "2004-08-03T06:15:56Z",
+    "program": "Planetary Exploration",
+    "detail": "First spacecraft to orbit Mercury. Mapped entire planet, discovered water ice at poles, measured magnetic field. Crashed into Mercury 2015.",
+    "icon": "\u263f\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17B, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2004-030A"
+  },
+  {
+    "id": "2005-043A",
+    "name": "STS-114",
+    "date": "2005-07-26T14:39:00Z",
+    "program": "Space Shuttle",
+    "detail": "Return to Flight after Columbia. Discovery commanded by Eileen Collins. New safety procedures, external tank cameras, inspection boom.",
+    "icon": "\ud83d\udd0d",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2005-025A",
+    "name": "Mars Reconnaissance Orbiter",
+    "date": "2005-08-12T11:43:00Z",
+    "program": "Planetary Exploration",
+    "detail": "High-resolution imaging of Mars surface. HiRISE camera sees objects as small as 30cm. Still operational, supports rover missions.",
+    "icon": "\ud83d\udcf7",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2005-025A"
+  },
+  {
+    "id": "2006-001A",
+    "name": "New Horizons",
+    "date": "2006-01-19T19:00:00Z",
+    "program": "Planetary Exploration",
+    "detail": "First mission to Pluto, flyby 2015 revealed heart-shaped nitrogen glacier. Continued to Kuiper Belt object Arrokoth in 2019.",
+    "icon": "\u2764\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2006-001A"
+  },
+  {
+    "id": "2007-034A",
+    "name": "Phoenix",
+    "date": "2007-08-04T09:26:34Z",
+    "program": "Planetary Exploration",
+    "detail": "Landed near Mars north pole, confirmed water ice just below surface. 'Followed the water' strategy vindicated. Operated 5 months.",
+    "icon": "\ud83e\uddca",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2007-034A"
+  },
+  {
+    "id": "2008-013A",
+    "name": "STS-123",
+    "date": "2008-03-11T06:28:14Z",
+    "program": "Space Stations",
+    "detail": "Endeavour delivered Japanese Kibo logistics module and Dextre robotic manipulator. Dominic Gorie commanded. ISS expansion continued.",
+    "icon": "\ud83e\uddbe",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2008-015A",
+    "name": "STS-124",
+    "date": "2008-05-31T21:02:12Z",
+    "program": "Space Stations",
+    "detail": "Discovery delivered Japanese Kibo pressurized module, largest ISS component. Mark Kelly commanded. Japan's primary ISS laboratory.",
+    "icon": "\ud83c\uddef\ud83c\uddf5",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "FALCON1-F4",
+    "name": "SpaceX Falcon 1 Flight 4",
+    "date": "2008-09-28T23:15:00Z",
+    "program": "Modern Era",
+    "detail": "First privately developed liquid-fuel rocket to reach orbit. Fourth attempt successful. Carried dummy payload, proved SpaceX viability.",
+    "icon": "\ud83d\ude80",
+    "launchSite": {
+      "name": "Omelek Island, Marshall Islands",
+      "latitude": 9.0477,
+      "longitude": 167.7431
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2008-051A",
+    "name": "STS-126",
+    "date": "2008-11-14T23:55:39Z",
+    "program": "Space Stations",
+    "detail": "Endeavour delivered equipment to expand ISS crew from 3 to 6. Chris Ferguson commanded. Water recycling system for permanent 6-person ops.",
+    "icon": "\ud83d\udca7",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2009-011A",
+    "name": "Kepler",
+    "date": "2009-03-07T03:49:57Z",
+    "program": "Planetary Exploration",
+    "detail": "Discovered 2,662 exoplanets by transit method. Proved planets are common in galaxy. Operated until 2018 when fuel exhausted.",
+    "icon": "\ud83e\ude90",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17B, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2009-011A"
+  },
+  {
+    "id": "2009-019A",
+    "name": "STS-125",
+    "date": "2009-05-11T18:01:56Z",
+    "program": "Space Shuttle",
+    "detail": "Final Hubble servicing mission. Atlantis crew performed 5 EVAs installing Wide Field Camera 3 and Cosmic Origins Spectrograph. Scott Altman commanded.",
+    "icon": "\ud83d\udd2d",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2010-066A",
+    "name": "SpaceX Dragon COTS-1",
+    "date": "2010-12-08T15:43:00Z",
+    "program": "Modern Era",
+    "detail": "First commercial spacecraft to be recovered from orbit. Dragon capsule completed two orbits, splashed down in Pacific.",
+    "icon": "\ud83d\udc09",
+    "launchSite": {
+      "name": "Cape Canaveral LC-40, Florida",
+      "latitude": 28.5618,
+      "longitude": -80.577
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2011-061A",
+    "name": "STS-135",
+    "date": "2011-07-08T15:29:03Z",
+    "program": "Space Shuttle",
+    "detail": "Final Space Shuttle mission. Atlantis delivered supplies to ISS. Chris Ferguson commanded. End of 30-year Shuttle program.",
+    "icon": "\ud83c\udfc1",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2011-037A",
+    "name": "Juno",
+    "date": "2011-08-05T16:25:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Orbiting Jupiter since 2016, studying composition, gravity, magnetic field, polar magnetosphere. Solar-powered at Jupiter distance.",
+    "icon": "\u26a1",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2011-037A"
+  },
+  {
+    "id": "2011-026A",
+    "name": "Tiangong-1",
+    "date": "2011-09-29T13:16:03Z",
+    "program": "Space Stations",
+    "detail": "China's first space station prototype. Hosted two crews (Shenzhou 9 and 10). Uncontrolled reentry over Pacific 2018.",
+    "icon": "\ud83c\udde8\ud83c\uddf3",
+    "launchSite": {
+      "name": "Jiuquan, China",
+      "latitude": 40.9603,
+      "longitude": 100.2915
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2011-026A"
+  },
+  {
+    "id": "2011-070A",
+    "name": "Curiosity/MSL",
+    "date": "2011-11-26T15:02:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Car-sized rover landed via skycrane in Gale Crater. Confirmed ancient habitability. Still exploring, climbing Mount Sharp.",
+    "icon": "\ud83d\ude97",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2011-070A"
+  },
+  {
+    "id": "2012-054A",
+    "name": "SpaceX CRS-1",
+    "date": "2012-10-08T00:35:00Z",
+    "program": "Modern Era",
+    "detail": "First commercial resupply mission to ISS. Dragon delivered 400kg cargo. Began regular commercial cargo services.",
+    "icon": "\ud83d\udce6",
+    "launchSite": {
+      "name": "Cape Canaveral LC-40, Florida",
+      "latitude": 28.5618,
+      "longitude": -80.577
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2013-055A",
+    "name": "Orbital Cygnus Demo",
+    "date": "2013-09-18T14:58:00Z",
+    "program": "Modern Era",
+    "detail": "First Cygnus spacecraft to ISS. Orbital Sciences (now Northrop Grumman) demonstration mission. Second commercial cargo provider.",
+    "icon": "\ud83d\ude9b",
+    "launchSite": {
+      "name": "Wallops Island, Virginia",
+      "latitude": 37.9401,
+      "longitude": -75.4665
+    },
+    "source": "https://www.northropgrumman.com/space/cygnus-spacecraft/"
+  },
+  {
+    "id": "2013-064A",
+    "name": "MAVEN",
+    "date": "2013-11-18T18:28:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Mars Atmosphere and Volatile Evolution mission studies how Mars lost its atmosphere. Still operational, provides communications relay.",
+    "icon": "\ud83d\udca8",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2013-064A"
+  },
+  {
+    "id": "2015-077A",
+    "name": "Falcon 9 ORBCOMM-2",
+    "date": "2015-12-22T01:29:00Z",
+    "program": "Modern Era",
+    "detail": "First orbital-class rocket landing. SpaceX Falcon 9 first stage returned to Landing Zone 1 at Cape Canaveral. Reusability breakthrough.",
+    "icon": "\ud83c\udfaf",
+    "launchSite": {
+      "name": "Cape Canaveral LC-40, Florida",
+      "latitude": 28.5618,
+      "longitude": -80.577
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2016-055A",
+    "name": "OSIRIS-REx",
+    "date": "2016-09-08T23:05:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Collected sample from asteroid Bennu, returned to Earth 2023. Sample reveals organic molecules and water-bearing clays.",
+    "icon": "\ud83d\udc8e",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2016-055A"
+  },
+  {
+    "id": "2016-049A",
+    "name": "Tiangong-2",
+    "date": "2016-09-15T14:04:09Z",
+    "program": "Space Stations",
+    "detail": "China's second space station. Hosted Shenzhou 11 crew for 30 days. Technology testbed for permanent station. Controlled deorbit 2019.",
+    "icon": "\ud83c\udfd7\ufe0f",
+    "launchSite": {
+      "name": "Jiuquan, China",
+      "latitude": 40.9603,
+      "longitude": 100.2915
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2016-049A"
+  },
+  {
+    "id": "2018-017A",
+    "name": "Falcon Heavy Demo",
+    "date": "2018-02-06T20:45:00Z",
+    "program": "Modern Era",
+    "detail": "Most powerful operational rocket. Launched Elon Musk's Tesla Roadster toward Mars orbit. Two side boosters landed simultaneously.",
+    "icon": "\ud83d\ude97",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2018-038A",
+    "name": "InSight",
+    "date": "2018-05-05T11:05:01Z",
+    "program": "Planetary Exploration",
+    "detail": "Mars lander studied interior structure with seismometer. Detected hundreds of marsquakes. Operated until late 2022, dust-covered panels.",
+    "icon": "\ud83d\udcca",
+    "launchSite": {
+      "name": "Vandenberg SLC-3E, California",
+      "latitude": 34.644,
+      "longitude": -120.5935
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2018-038A"
+  },
+  {
+    "id": "2018-065A",
+    "name": "Parker Solar Probe",
+    "date": "2018-08-12T07:31:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Fastest human-made object, diving through Sun's corona. Closest approach 6.1 million km from Sun. Studying solar wind origins.",
+    "icon": "\u2600\ufe0f",
+    "launchSite": {
+      "name": "Cape Canaveral LC-37B, Florida",
+      "latitude": 28.5316,
+      "longitude": -80.5652
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2018-065A"
+  },
+  {
+    "id": "2019-009A",
+    "name": "Crew Dragon Demo-1",
+    "date": "2019-03-02T07:49:00Z",
+    "program": "Modern Era",
+    "detail": "Uncrewed test flight of SpaceX Crew Dragon to ISS. Carried Ripley test dummy. Successful docking and return paved way for crewed flights.",
+    "icon": "\ud83e\udd16",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2020-033A",
+    "name": "Crew Dragon Demo-2",
+    "date": "2020-05-30T19:22:00Z",
+    "program": "Modern Era",
+    "detail": "First crewed orbital spaceflight from US since 2011. Doug Hurley and Bob Behnken to ISS. Commercial crew era began.",
+    "icon": "\ud83d\udc68\u200d\ud83d\ude80",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2020-052A",
+    "name": "Perseverance/Ingenuity",
+    "date": "2020-07-30T11:50:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Mars 2020 rover landed in Jezero Crater. Ingenuity helicopter achieved first powered flight on another planet. Collecting samples for future return.",
+    "icon": "\ud83d\ude81",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2020-052A"
+  },
+  {
+    "id": "2021-029A",
+    "name": "Tianhe",
+    "date": "2021-04-29T03:23:00Z",
+    "program": "Space Stations",
+    "detail": "Core module of China Space Station. Permanently inhabited since June 2022. Foundation for China's modular space station.",
+    "icon": "\ud83c\udfe0",
+    "launchSite": {
+      "name": "Wenchang, China",
+      "latitude": 19.6145,
+      "longitude": 110.951
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2021-029A"
+  },
+  {
+    "id": "2021-083A",
+    "name": "Inspiration4",
+    "date": "2021-09-16T00:02:56Z",
+    "program": "Modern Era",
+    "detail": "First all-civilian orbital spaceflight. Jared Isaacman, Hayley Arceneaux, Chris Sembroski, Sian Proctor spent 3 days in orbit at 585 km altitude.",
+    "icon": "\ud83c\udf0d",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2021-091A",
+    "name": "Lucy",
+    "date": "2021-10-16T09:34:00Z",
+    "program": "Planetary Exploration",
+    "detail": "First mission to Jupiter Trojan asteroids. Will visit 8 asteroids over 12 years. Studying remnants from early solar system formation.",
+    "icon": "\ud83d\udc8e",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2021-091A"
+  },
+  {
+    "id": "2021-093A",
+    "name": "DART",
+    "date": "2021-11-24T06:21:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Double Asteroid Redirection Test intentionally crashed into Dimorphos moon, changing its orbit. Proved planetary defense technique viable.",
+    "icon": "\ud83c\udfaf",
+    "launchSite": {
+      "name": "Vandenberg SLC-4E, California",
+      "latitude": 34.6321,
+      "longitude": -120.6107
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2021-093A"
+  },
+  {
+    "id": "2021-130A",
+    "name": "James Webb Space Telescope",
+    "date": "2021-12-25T12:20:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Largest space telescope, observing in infrared from L2. Studying first galaxies, exoplanet atmospheres, star formation. Revolutionary science.",
+    "icon": "\ud83d\udd2d",
+    "launchSite": {
+      "name": "Kourou (Guiana Space Centre), French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2021-130A"
+  },
+  {
+    "id": "2022-060A",
+    "name": "Boeing Starliner OFT-2",
+    "date": "2022-05-19T22:54:00Z",
+    "program": "Modern Era",
+    "detail": "Second uncrewed test flight of Boeing Starliner to ISS. Successfully docked after OFT-1 issues. Paved way for crewed flights.",
+    "icon": "\u2b50",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://www.boeing.com/space/starliner/"
+  },
+  {
+    "id": "2022-117A",
+    "name": "Artemis I",
+    "date": "2022-11-16T06:47:44Z",
+    "program": "Artemis & Beyond",
+    "detail": "Uncrewed test flight of SLS and Orion spacecraft. 25.5-day mission orbited Moon, tested heat shield at lunar return velocity.",
+    "icon": "\ud83c\udf19",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://www.nasa.gov/artemis-i/"
+  },
+  {
+    "id": "STARSHIP-IFT1",
+    "name": "Starship IFT-1",
+    "date": "2023-04-20T13:33:09Z",
+    "program": "Modern Era",
+    "detail": "First integrated flight test of SpaceX Starship. Largest rocket ever flown. Vehicle lost during ascent but provided valuable test data.",
+    "icon": "\ud83d\ude80",
+    "launchSite": {
+      "name": "Starbase, Texas",
+      "latitude": 25.9972,
+      "longitude": -97.1569
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2023-109A",
+    "name": "Psyche",
+    "date": "2023-10-13T14:19:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Mission to metal-rich asteroid 16 Psyche. May be exposed core of early planet. Testing Deep Space Optical Communications en route.",
+    "icon": "\ud83d\udef0\ufe0f",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://science.nasa.gov/mission/psyche/"
+  },
+  {
+    "id": "STARSHIP-IFT4",
+    "name": "Starship IFT-4",
+    "date": "2024-06-06T12:50:00Z",
+    "program": "Modern Era",
+    "detail": "Fourth Starship test. First successful soft splashdown of both stages. Super Heavy booster survived reentry and ocean landing. Major milestone.",
+    "icon": "\ud83c\udf0a",
+    "launchSite": {
+      "name": "Starbase, Texas",
+      "latitude": 25.9972,
+      "longitude": -97.1569
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2024-091A",
+    "name": "Europa Clipper",
+    "date": "2024-10-14T16:06:00Z",
+    "program": "Planetary Exploration",
+    "detail": "Orbiting Jupiter to study Europa's subsurface ocean. 49 close flybys investigating habitability of ice moon. Arrival 2030.",
+    "icon": "\ud83c\udf0a",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39A, Florida",
+      "latitude": 28.6083,
+      "longitude": -80.6041
+    },
+    "source": "https://science.nasa.gov/mission/europa-clipper/"
+  },
+  {
+    "id": "STARSHIP-IFT6",
+    "name": "Starship IFT-6",
+    "date": "2024-11-19T22:00:00Z",
+    "program": "Modern Era",
+    "detail": "Sixth Starship test. Attempted first catch of Super Heavy booster with launch tower 'chopsticks' but aborted to ocean. Ship splashdown successful.",
+    "icon": "\ud83e\udd62",
+    "launchSite": {
+      "name": "Starbase, Texas",
+      "latitude": 25.9972,
+      "longitude": -97.1569
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "ARTEMIS-II",
+    "name": "Artemis II",
+    "date": "2025-09-01T12:00:00Z",
+    "program": "Artemis & Beyond",
+    "detail": "First crewed Artemis mission. Four astronauts on lunar flyby trajectory. Reid Wiseman, Victor Glover, Christina Koch, Jeremy Hansen.",
+    "icon": "\ud83d\udc68\u200d\ud83d\ude80",
+    "launchSite": {
+      "name": "Kennedy Space Center LC-39B, Florida",
+      "latitude": 28.6272,
+      "longitude": -80.6208
+    },
+    "source": "https://www.nasa.gov/artemis-ii/"
+  }
+]
