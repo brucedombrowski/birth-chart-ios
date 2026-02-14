@@ -54,18 +54,26 @@ enum GeocentricScene {
         // --- Earth ---
         let earthSphere = SCNSphere(radius: CGFloat(earthRadius))
         earthSphere.segmentCount = 64
-        if let texImage = UIImage(named: "earth_texture") {
+        if let texImage = Bundle.main.path(forResource: "earth_texture", ofType: "jpg").flatMap { UIImage(contentsOfFile: $0) } {
             earthSphere.firstMaterial?.diffuse.contents = texImage
         } else {
             earthSphere.firstMaterial?.diffuse.contents = UIColor.systemTeal
         }
         earthSphere.firstMaterial?.specular.contents = UIColor.white.withAlphaComponent(0.3)
         earthSphere.firstMaterial?.locksAmbientWithDiffuse = true
+        // Tilt container (23.44° axial tilt) — never changes
+        let tiltNode = SCNNode()
+        tiltNode.name = "EarthTilt"
+        tiltNode.eulerAngles.z = 23.44 * .pi / 180
+        scene.rootNode.addChildNode(tiltNode)
+
+        // Earth sphere rotates inside the tilt container
         let earthNode = SCNNode(geometry: earthSphere)
         earthNode.name = "Earth"
-        // Axial tilt
-        earthNode.eulerAngles.z = 23.44 * .pi / 180
-        scene.rootNode.addChildNode(earthNode)
+        // Rotation around polar axis using axis-angle (avoids gimbal lock)
+        let angle = earthRotationAngle(at: date)
+        earthNode.rotation = SCNVector4(0, 1, 0, angle)
+        tiltNode.addChildNode(earthNode)
 
         // Earth "glow" ring (atmosphere)
         let atmoRing = SCNTorus(ringRadius: CGFloat(earthRadius + 0.05), pipeRadius: 0.08)
@@ -189,6 +197,12 @@ enum GeocentricScene {
             }
         }
 
+        // Rotate Earth (axis-angle, no gimbal lock)
+        if let earthNode = root.childNode(withName: "Earth", recursively: true) {
+            let angle = earthRotationAngle(at: date)
+            earthNode.rotation = SCNVector4(0, 1, 0, angle)
+        }
+
         // Update Moon
         if let moon = chart?.planets.first(where: { $0.name == "Moon" }),
            let moonNode = root.childNode(withName: "Moon", recursively: false) {
@@ -239,6 +253,19 @@ enum GeocentricScene {
         billboard.freeAxes = .all
         textNode.constraints = [billboard]
         node.addChildNode(textNode)
+    }
+
+    /// Earth rotation angle from sidereal time.
+    /// One full rotation every 23h 56m 4.1s (sidereal day = 86164.1 seconds).
+    /// Returns raw accumulated angle (no modulo) to avoid animation jitter at wrap.
+    private static func earthRotationAngle(at date: Date) -> Float {
+        let j2000 = DateComponents(calendar: .init(identifier: .gregorian),
+                                   timeZone: TimeZone(identifier: "UTC"),
+                                   year: 2000, month: 1, day: 1,
+                                   hour: 12, minute: 0, second: 0).date!
+        let secondsSinceJ2000 = date.timeIntervalSince(j2000)
+        let siderealDay = 86164.0905 // seconds
+        return Float(secondsSinceJ2000 / siderealDay * 2.0 * .pi)
     }
 
     /// Add ISS AOS (Acquisition of Signal) cone showing the ground footprint.

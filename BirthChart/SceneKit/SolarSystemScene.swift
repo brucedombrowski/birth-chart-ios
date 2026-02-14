@@ -71,7 +71,7 @@ enum SolarSystemScene {
         // Place Earth
         let earthVisuals = planetVisuals["Earth"]!
         let earthNode = createPlanetNode(name: "Earth", radius: earthVisuals.radius, color: earthVisuals.color)
-        if let texImage = UIImage(named: "earth_texture") {
+        if let texImage = Bundle.main.path(forResource: "earth_texture", ofType: "jpg").flatMap { UIImage(contentsOfFile: $0) } {
             earthNode.geometry?.firstMaterial?.diffuse.contents = texImage
         }
         let earthAngle = earthLon * .pi / 180
