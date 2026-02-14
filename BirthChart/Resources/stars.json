@@ -1,0 +1,786 @@
+[
+  {
+    "id": "sirius",
+    "name": "Sirius",
+    "constellation": "Canis Major",
+    "raDeg": 101.287,
+    "decDeg": -16.716,
+    "magnitude": -1.46
+  },
+  {
+    "id": "canopus",
+    "name": "Canopus",
+    "constellation": "Carina",
+    "raDeg": 95.988,
+    "decDeg": -52.696,
+    "magnitude": -0.74
+  },
+  {
+    "id": "arcturus",
+    "name": "Arcturus",
+    "constellation": "Boötes",
+    "raDeg": 213.915,
+    "decDeg": 19.182,
+    "magnitude": -0.05
+  },
+  {
+    "id": "vega",
+    "name": "Vega",
+    "constellation": "Lyra",
+    "raDeg": 279.234,
+    "decDeg": 38.783,
+    "magnitude": 0.03
+  },
+  {
+    "id": "capella",
+    "name": "Capella",
+    "constellation": "Auriga",
+    "raDeg": 79.172,
+    "decDeg": 45.998,
+    "magnitude": 0.08
+  },
+  {
+    "id": "rigel",
+    "name": "Rigel",
+    "constellation": "Orion",
+    "raDeg": 78.634,
+    "decDeg": -8.202,
+    "magnitude": 0.13
+  },
+  {
+    "id": "procyon",
+    "name": "Procyon",
+    "constellation": "Canis Minor",
+    "raDeg": 114.825,
+    "decDeg": 5.225,
+    "magnitude": 0.34
+  },
+  {
+    "id": "betelgeuse",
+    "name": "Betelgeuse",
+    "constellation": "Orion",
+    "raDeg": 88.793,
+    "decDeg": 7.407,
+    "magnitude": 0.50
+  },
+  {
+    "id": "altair",
+    "name": "Altair",
+    "constellation": "Aquila",
+    "raDeg": 297.696,
+    "decDeg": 8.868,
+    "magnitude": 0.77
+  },
+  {
+    "id": "aldebaran",
+    "name": "Aldebaran",
+    "constellation": "Taurus",
+    "raDeg": 68.980,
+    "decDeg": 16.509,
+    "magnitude": 0.85
+  },
+  {
+    "id": "spica",
+    "name": "Spica",
+    "constellation": "Virgo",
+    "raDeg": 201.298,
+    "decDeg": -11.161,
+    "magnitude": 1.04
+  },
+  {
+    "id": "antares",
+    "name": "Antares",
+    "constellation": "Scorpius",
+    "raDeg": 247.352,
+    "decDeg": -26.432,
+    "magnitude": 1.09
+  },
+  {
+    "id": "pollux",
+    "name": "Pollux",
+    "constellation": "Gemini",
+    "raDeg": 116.329,
+    "decDeg": 28.026,
+    "magnitude": 1.14
+  },
+  {
+    "id": "fomalhaut",
+    "name": "Fomalhaut",
+    "constellation": "Piscis Austrinus",
+    "raDeg": 344.413,
+    "decDeg": -29.622,
+    "magnitude": 1.16
+  },
+  {
+    "id": "deneb",
+    "name": "Deneb",
+    "constellation": "Cygnus",
+    "raDeg": 310.358,
+    "decDeg": 45.280,
+    "magnitude": 1.25
+  },
+  {
+    "id": "regulus",
+    "name": "Regulus",
+    "constellation": "Leo",
+    "raDeg": 152.093,
+    "decDeg": 11.967,
+    "magnitude": 1.35
+  },
+  {
+    "id": "adhara",
+    "name": "Adhara",
+    "constellation": "Canis Major",
+    "raDeg": 104.656,
+    "decDeg": -28.972,
+    "magnitude": 1.50
+  },
+  {
+    "id": "castor",
+    "name": "Castor",
+    "constellation": "Gemini",
+    "raDeg": 113.650,
+    "decDeg": 31.888,
+    "magnitude": 1.57
+  },
+  {
+    "id": "bellatrix",
+    "name": "Bellatrix",
+    "constellation": "Orion",
+    "raDeg": 81.283,
+    "decDeg": 6.350,
+    "magnitude": 1.64
+  },
+  {
+    "id": "alnilam",
+    "name": "Alnilam",
+    "constellation": "Orion",
+    "raDeg": 84.053,
+    "decDeg": -1.202,
+    "magnitude": 1.69
+  },
+  {
+    "id": "alnitak",
+    "name": "Alnitak",
+    "constellation": "Orion",
+    "raDeg": 85.190,
+    "decDeg": -1.943,
+    "magnitude": 1.77
+  },
+  {
+    "id": "mintaka",
+    "name": "Mintaka",
+    "constellation": "Orion",
+    "raDeg": 83.002,
+    "decDeg": -0.299,
+    "magnitude": 2.23
+  },
+  {
+    "id": "saiph",
+    "name": "Saiph",
+    "constellation": "Orion",
+    "raDeg": 86.939,
+    "decDeg": -9.670,
+    "magnitude": 2.06
+  },
+  {
+    "id": "polaris",
+    "name": "Polaris",
+    "constellation": "Ursa Minor",
+    "raDeg": 37.954,
+    "decDeg": 89.264,
+    "magnitude": 1.98
+  },
+  {
+    "id": "dubhe",
+    "name": "Dubhe",
+    "constellation": "Ursa Major",
+    "raDeg": 165.932,
+    "decDeg": 61.751,
+    "magnitude": 1.79
+  },
+  {
+    "id": "merak",
+    "name": "Merak",
+    "constellation": "Ursa Major",
+    "raDeg": 165.460,
+    "decDeg": 56.382,
+    "magnitude": 2.37
+  },
+  {
+    "id": "phecda",
+    "name": "Phecda",
+    "constellation": "Ursa Major",
+    "raDeg": 178.457,
+    "decDeg": 53.695,
+    "magnitude": 2.44
+  },
+  {
+    "id": "megrez",
+    "name": "Megrez",
+    "constellation": "Ursa Major",
+    "raDeg": 183.856,
+    "decDeg": 57.033,
+    "magnitude": 3.31
+  },
+  {
+    "id": "alioth",
+    "name": "Alioth",
+    "constellation": "Ursa Major",
+    "raDeg": 193.507,
+    "decDeg": 55.960,
+    "magnitude": 1.77
+  },
+  {
+    "id": "mizar",
+    "name": "Mizar",
+    "constellation": "Ursa Major",
+    "raDeg": 200.981,
+    "decDeg": 54.925,
+    "magnitude": 2.27
+  },
+  {
+    "id": "alkaid",
+    "name": "Alkaid",
+    "constellation": "Ursa Major",
+    "raDeg": 206.885,
+    "decDeg": 49.313,
+    "magnitude": 1.86
+  },
+  {
+    "id": "schedar",
+    "name": "Schedar",
+    "constellation": "Cassiopeia",
+    "raDeg": 10.127,
+    "decDeg": 56.537,
+    "magnitude": 2.23
+  },
+  {
+    "id": "caph",
+    "name": "Caph",
+    "constellation": "Cassiopeia",
+    "raDeg": 2.295,
+    "decDeg": 59.150,
+    "magnitude": 2.27
+  },
+  {
+    "id": "gamma-cas",
+    "name": "Gamma Cassiopeiae",
+    "constellation": "Cassiopeia",
+    "raDeg": 14.177,
+    "decDeg": 60.717,
+    "magnitude": 2.47
+  },
+  {
+    "id": "ruchbah",
+    "name": "Ruchbah",
+    "constellation": "Cassiopeia",
+    "raDeg": 21.454,
+    "decDeg": 60.235,
+    "magnitude": 2.68
+  },
+  {
+    "id": "segin",
+    "name": "Segin",
+    "constellation": "Cassiopeia",
+    "raDeg": 25.543,
+    "decDeg": 63.670,
+    "magnitude": 3.38
+  },
+  {
+    "id": "albireo",
+    "name": "Albireo",
+    "constellation": "Cygnus",
+    "raDeg": 292.680,
+    "decDeg": 27.960,
+    "magnitude": 3.08
+  },
+  {
+    "id": "sadr",
+    "name": "Sadr",
+    "constellation": "Cygnus",
+    "raDeg": 305.557,
+    "decDeg": 40.257,
+    "magnitude": 2.20
+  },
+  {
+    "id": "gienah",
+    "name": "Gienah",
+    "constellation": "Cygnus",
+    "raDeg": 304.001,
+    "decDeg": 33.970,
+    "magnitude": 2.46
+  },
+  {
+    "id": "delta-cyg",
+    "name": "Delta Cygni",
+    "constellation": "Cygnus",
+    "raDeg": 296.244,
+    "decDeg": 45.131,
+    "magnitude": 2.87
+  },
+  {
+    "id": "sheliak",
+    "name": "Sheliak",
+    "constellation": "Lyra",
+    "raDeg": 282.520,
+    "decDeg": 33.363,
+    "magnitude": 3.45
+  },
+  {
+    "id": "sulafat",
+    "name": "Sulafat",
+    "constellation": "Lyra",
+    "raDeg": 284.736,
+    "decDeg": 32.690,
+    "magnitude": 3.24
+  },
+  {
+    "id": "delta-lyr",
+    "name": "Delta Lyrae",
+    "constellation": "Lyra",
+    "raDeg": 286.063,
+    "decDeg": 36.900,
+    "magnitude": 4.30
+  },
+  {
+    "id": "tarazed",
+    "name": "Tarazed",
+    "constellation": "Aquila",
+    "raDeg": 296.565,
+    "decDeg": 10.613,
+    "magnitude": 2.72
+  },
+  {
+    "id": "alshain",
+    "name": "Alshain",
+    "constellation": "Aquila",
+    "raDeg": 298.828,
+    "decDeg": 6.407,
+    "magnitude": 3.71
+  },
+  {
+    "id": "gomeisa",
+    "name": "Gomeisa",
+    "constellation": "Canis Minor",
+    "raDeg": 110.030,
+    "decDeg": 8.290,
+    "magnitude": 2.90
+  },
+  {
+    "id": "acrux",
+    "name": "Acrux",
+    "constellation": "Crux",
+    "raDeg": 186.650,
+    "decDeg": -63.099,
+    "magnitude": 0.77
+  },
+  {
+    "id": "mimosa",
+    "name": "Mimosa",
+    "constellation": "Crux",
+    "raDeg": 191.930,
+    "decDeg": -59.689,
+    "magnitude": 1.25
+  },
+  {
+    "id": "gacrux",
+    "name": "Gacrux",
+    "constellation": "Crux",
+    "raDeg": 187.792,
+    "decDeg": -57.113,
+    "magnitude": 1.63
+  },
+  {
+    "id": "delta-cru",
+    "name": "Delta Crucis",
+    "constellation": "Crux",
+    "raDeg": 183.786,
+    "decDeg": -58.749,
+    "magnitude": 2.80
+  },
+  {
+    "id": "hamal",
+    "name": "Hamal",
+    "constellation": "Aries",
+    "raDeg": 31.793,
+    "decDeg": 23.462,
+    "magnitude": 2.00
+  },
+  {
+    "id": "sheratan",
+    "name": "Sheratan",
+    "constellation": "Aries",
+    "raDeg": 28.660,
+    "decDeg": 20.808,
+    "magnitude": 2.64
+  },
+  {
+    "id": "mesarthim",
+    "name": "Mesarthim",
+    "constellation": "Aries",
+    "raDeg": 27.708,
+    "decDeg": 19.294,
+    "magnitude": 3.88
+  },
+  {
+    "id": "elnath",
+    "name": "Elnath",
+    "constellation": "Taurus",
+    "raDeg": 81.573,
+    "decDeg": 28.607,
+    "magnitude": 1.65
+  },
+  {
+    "id": "zeta-tau",
+    "name": "Zeta Tauri",
+    "constellation": "Taurus",
+    "raDeg": 84.411,
+    "decDeg": 21.142,
+    "magnitude": 3.00
+  },
+  {
+    "id": "alcyone",
+    "name": "Alcyone",
+    "constellation": "Taurus",
+    "raDeg": 56.871,
+    "decDeg": 24.105,
+    "magnitude": 2.86
+  },
+  {
+    "id": "alhena",
+    "name": "Alhena",
+    "constellation": "Gemini",
+    "raDeg": 99.428,
+    "decDeg": 16.399,
+    "magnitude": 1.93
+  },
+  {
+    "id": "mebsuta",
+    "name": "Mebsuta",
+    "constellation": "Gemini",
+    "raDeg": 95.740,
+    "decDeg": 25.131,
+    "magnitude": 3.06
+  },
+  {
+    "id": "tejat",
+    "name": "Tejat",
+    "constellation": "Gemini",
+    "raDeg": 93.719,
+    "decDeg": 22.514,
+    "magnitude": 2.88
+  },
+  {
+    "id": "acubens",
+    "name": "Acubens",
+    "constellation": "Cancer",
+    "raDeg": 131.171,
+    "decDeg": 11.858,
+    "magnitude": 4.25
+  },
+  {
+    "id": "asellus-australis",
+    "name": "Asellus Australis",
+    "constellation": "Cancer",
+    "raDeg": 130.821,
+    "decDeg": 18.154,
+    "magnitude": 3.94
+  },
+  {
+    "id": "asellus-borealis",
+    "name": "Asellus Borealis",
+    "constellation": "Cancer",
+    "raDeg": 130.110,
+    "decDeg": 21.468,
+    "magnitude": 4.66
+  },
+  {
+    "id": "altarf",
+    "name": "Altarf",
+    "constellation": "Cancer",
+    "raDeg": 124.129,
+    "decDeg": 9.186,
+    "magnitude": 3.53
+  },
+  {
+    "id": "denebola",
+    "name": "Denebola",
+    "constellation": "Leo",
+    "raDeg": 177.265,
+    "decDeg": 14.572,
+    "magnitude": 2.14
+  },
+  {
+    "id": "algieba",
+    "name": "Algieba",
+    "constellation": "Leo",
+    "raDeg": 154.993,
+    "decDeg": 19.841,
+    "magnitude": 2.08
+  },
+  {
+    "id": "zosma",
+    "name": "Zosma",
+    "constellation": "Leo",
+    "raDeg": 168.527,
+    "decDeg": 20.524,
+    "magnitude": 2.56
+  },
+  {
+    "id": "chertan",
+    "name": "Chertan",
+    "constellation": "Leo",
+    "raDeg": 176.513,
+    "decDeg": 15.430,
+    "magnitude": 3.34
+  },
+  {
+    "id": "zavijava",
+    "name": "Zavijava",
+    "constellation": "Virgo",
+    "raDeg": 188.003,
+    "decDeg": 1.765,
+    "magnitude": 3.59
+  },
+  {
+    "id": "porrima",
+    "name": "Porrima",
+    "constellation": "Virgo",
+    "raDeg": 190.415,
+    "decDeg": -1.450,
+    "magnitude": 2.74
+  },
+  {
+    "id": "vindemiatrix",
+    "name": "Vindemiatrix",
+    "constellation": "Virgo",
+    "raDeg": 195.545,
+    "decDeg": 10.959,
+    "magnitude": 2.83
+  },
+  {
+    "id": "heze",
+    "name": "Heze",
+    "constellation": "Virgo",
+    "raDeg": 203.673,
+    "decDeg": -0.596,
+    "magnitude": 3.38
+  },
+  {
+    "id": "zubenelgenubi",
+    "name": "Zubenelgenubi",
+    "constellation": "Libra",
+    "raDeg": 222.720,
+    "decDeg": -16.042,
+    "magnitude": 2.75
+  },
+  {
+    "id": "zubeneschamali",
+    "name": "Zubeneschamali",
+    "constellation": "Libra",
+    "raDeg": 229.252,
+    "decDeg": -9.383,
+    "magnitude": 2.61
+  },
+  {
+    "id": "zubenelakrab",
+    "name": "Zubenelakrab",
+    "constellation": "Libra",
+    "raDeg": 233.880,
+    "decDeg": -19.804,
+    "magnitude": 3.29
+  },
+  {
+    "id": "shaula",
+    "name": "Shaula",
+    "constellation": "Scorpius",
+    "raDeg": 263.402,
+    "decDeg": -37.103,
+    "magnitude": 1.63
+  },
+  {
+    "id": "dschubba",
+    "name": "Dschubba",
+    "constellation": "Scorpius",
+    "raDeg": 240.083,
+    "decDeg": -22.622,
+    "magnitude": 2.29
+  },
+  {
+    "id": "acrab",
+    "name": "Acrab",
+    "constellation": "Scorpius",
+    "raDeg": 241.359,
+    "decDeg": -19.806,
+    "magnitude": 2.56
+  },
+  {
+    "id": "sargas",
+    "name": "Sargas",
+    "constellation": "Scorpius",
+    "raDeg": 264.330,
+    "decDeg": -42.998,
+    "magnitude": 1.87
+  },
+  {
+    "id": "kaus-australis",
+    "name": "Kaus Australis",
+    "constellation": "Sagittarius",
+    "raDeg": 276.043,
+    "decDeg": -34.385,
+    "magnitude": 1.85
+  },
+  {
+    "id": "nunki",
+    "name": "Nunki",
+    "constellation": "Sagittarius",
+    "raDeg": 283.816,
+    "decDeg": -26.297,
+    "magnitude": 2.02
+  },
+  {
+    "id": "ascella",
+    "name": "Ascella",
+    "constellation": "Sagittarius",
+    "raDeg": 290.972,
+    "decDeg": -29.880,
+    "magnitude": 2.60
+  },
+  {
+    "id": "kaus-media",
+    "name": "Kaus Media",
+    "constellation": "Sagittarius",
+    "raDeg": 275.249,
+    "decDeg": -29.828,
+    "magnitude": 2.70
+  },
+  {
+    "id": "kaus-borealis",
+    "name": "Kaus Borealis",
+    "constellation": "Sagittarius",
+    "raDeg": 271.452,
+    "decDeg": -25.422,
+    "magnitude": 2.81
+  },
+  {
+    "id": "deneb-algedi",
+    "name": "Deneb Algedi",
+    "constellation": "Capricornus",
+    "raDeg": 326.760,
+    "decDeg": -16.127,
+    "magnitude": 2.87
+  },
+  {
+    "id": "dabih",
+    "name": "Dabih",
+    "constellation": "Capricornus",
+    "raDeg": 305.253,
+    "decDeg": -14.781,
+    "magnitude": 3.08
+  },
+  {
+    "id": "nashira",
+    "name": "Nashira",
+    "constellation": "Capricornus",
+    "raDeg": 322.890,
+    "decDeg": -16.662,
+    "magnitude": 3.68
+  },
+  {
+    "id": "algedi",
+    "name": "Algedi",
+    "constellation": "Capricornus",
+    "raDeg": 304.513,
+    "decDeg": -12.508,
+    "magnitude": 3.58
+  },
+  {
+    "id": "sadalsuud",
+    "name": "Sadalsuud",
+    "constellation": "Aquarius",
+    "raDeg": 322.890,
+    "decDeg": -5.571,
+    "magnitude": 2.87
+  },
+  {
+    "id": "sadalmelik",
+    "name": "Sadalmelik",
+    "constellation": "Aquarius",
+    "raDeg": 331.446,
+    "decDeg": -0.320,
+    "magnitude": 2.96
+  },
+  {
+    "id": "sadachbia",
+    "name": "Sadachbia",
+    "constellation": "Aquarius",
+    "raDeg": 314.293,
+    "decDeg": -6.049,
+    "magnitude": 3.77
+  },
+  {
+    "id": "skat",
+    "name": "Skat",
+    "constellation": "Aquarius",
+    "raDeg": 335.414,
+    "decDeg": -15.821,
+    "magnitude": 3.27
+  },
+  {
+    "id": "alrescha",
+    "name": "Alrescha",
+    "constellation": "Pisces",
+    "raDeg": 2.034,
+    "decDeg": 2.764,
+    "magnitude": 3.82
+  },
+  {
+    "id": "eta-psc",
+    "name": "Eta Piscium",
+    "constellation": "Pisces",
+    "raDeg": 25.580,
+    "decDeg": 15.346,
+    "magnitude": 3.62
+  },
+  {
+    "id": "gamma-psc",
+    "name": "Gamma Piscium",
+    "constellation": "Pisces",
+    "raDeg": 348.894,
+    "decDeg": 3.282,
+    "magnitude": 3.70
+  },
+  {
+    "id": "omega-psc",
+    "name": "Omega Piscium",
+    "constellation": "Pisces",
+    "raDeg": 354.838,
+    "decDeg": 6.863,
+    "magnitude": 4.01
+  },
+  {
+    "id": "kochab",
+    "name": "Kochab",
+    "constellation": "Ursa Minor",
+    "raDeg": 222.676,
+    "decDeg": 74.156,
+    "magnitude": 2.08
+  },
+  {
+    "id": "pherkad",
+    "name": "Pherkad",
+    "constellation": "Ursa Minor",
+    "raDeg": 230.182,
+    "decDeg": 71.834,
+    "magnitude": 3.05
+  },
+  {
+    "id": "yildun",
+    "name": "Yildun",
+    "constellation": "Ursa Minor",
+    "raDeg": 263.054,
+    "decDeg": 86.586,
+    "magnitude": 4.35
+  }
+]

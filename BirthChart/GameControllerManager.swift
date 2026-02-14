@@ -21,9 +21,11 @@ final class GameControllerManager: ObservableObject {
     nonisolated(unsafe) var crossJustPressed = false
     nonisolated(unsafe) var triangleJustPressed = false
     nonisolated(unsafe) var squareJustPressed = false
+    nonisolated(unsafe) var circleJustPressed = false
     private var prevCross = false
     private var prevTriangle = false
     private var prevSquare = false
+    private var prevCircle = false
 
     private var controller: GCController?
     private var cancellables = Set<AnyCancellable>()
@@ -71,12 +73,15 @@ final class GameControllerManager: ObservableObject {
                 let cross = gp.buttonA.isPressed
                 let triangle = gp.buttonY.isPressed
                 let square = gp.buttonX.isPressed
+                let circle = gp.buttonB.isPressed
                 self.crossJustPressed = cross && !self.prevCross
                 self.triangleJustPressed = triangle && !self.prevTriangle
                 self.squareJustPressed = square && !self.prevSquare
+                self.circleJustPressed = circle && !self.prevCircle
                 self.prevCross = cross
                 self.prevTriangle = triangle
                 self.prevSquare = square
+                self.prevCircle = circle
             }
         }
     }

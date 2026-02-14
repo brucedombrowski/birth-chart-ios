@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Aries",
+    "abbreviation": "Ari",
+    "lines": [
+      ["hamal", "sheratan"],
+      ["sheratan", "mesarthim"]
+    ],
+    "labelStarId": "hamal"
+  },
+  {
+    "name": "Taurus",
+    "abbreviation": "Tau",
+    "lines": [
+      ["aldebaran", "elnath"],
+      ["aldebaran", "zeta-tau"],
+      ["elnath", "zeta-tau"]
+    ],
+    "labelStarId": "aldebaran"
+  },
+  {
+    "name": "Gemini",
+    "abbreviation": "Gem",
+    "lines": [
+      ["castor", "pollux"],
+      ["castor", "mebsuta"],
+      ["mebsuta", "tejat"],
+      ["pollux", "alhena"],
+      ["alhena", "tejat"]
+    ],
+    "labelStarId": "pollux"
+  },
+  {
+    "name": "Cancer",
+    "abbreviation": "Cnc",
+    "lines": [
+      ["acubens", "asellus-australis"],
+      ["asellus-australis", "asellus-borealis"],
+      ["asellus-australis", "altarf"],
+      ["altarf", "acubens"]
+    ],
+    "labelStarId": "asellus-australis"
+  },
+  {
+    "name": "Leo",
+    "abbreviation": "Leo",
+    "lines": [
+      ["regulus", "algieba"],
+      ["algieba", "zosma"],
+      ["zosma", "denebola"],
+      ["denebola", "chertan"],
+      ["chertan", "zosma"]
+    ],
+    "labelStarId": "regulus"
+  },
+  {
+    "name": "Virgo",
+    "abbreviation": "Vir",
+    "lines": [
+      ["spica", "heze"],
+      ["heze", "porrima"],
+      ["porrima", "zavijava"],
+      ["zavijava", "vindemiatrix"],
+      ["vindemiatrix", "heze"]
+    ],
+    "labelStarId": "spica"
+  },
+  {
+    "name": "Libra",
+    "abbreviation": "Lib",
+    "lines": [
+      ["zubenelgenubi", "zubeneschamali"],
+      ["zubeneschamali", "zubenelakrab"]
+    ],
+    "labelStarId": "zubeneschamali"
+  },
+  {
+    "name": "Scorpius",
+    "abbreviation": "Sco",
+    "lines": [
+      ["acrab", "dschubba"],
+      ["dschubba", "antares"],
+      ["antares", "shaula"],
+      ["shaula", "sargas"]
+    ],
+    "labelStarId": "antares"
+  },
+  {
+    "name": "Sagittarius",
+    "abbreviation": "Sgr",
+    "lines": [
+      ["kaus-borealis", "kaus-media"],
+      ["kaus-media", "kaus-australis"],
+      ["kaus-australis", "ascella"],
+      ["ascella", "nunki"],
+      ["nunki", "kaus-borealis"]
+    ],
+    "labelStarId": "kaus-australis"
+  },
+  {
+    "name": "Capricornus",
+    "abbreviation": "Cap",
+    "lines": [
+      ["algedi", "dabih"],
+      ["dabih", "nashira"],
+      ["nashira", "deneb-algedi"]
+    ],
+    "labelStarId": "deneb-algedi"
+  },
+  {
+    "name": "Aquarius",
+    "abbreviation": "Aqr",
+    "lines": [
+      ["sadalmelik", "sadalsuud"],
+      ["sadalsuud", "sadachbia"],
+      ["sadalsuud", "skat"]
+    ],
+    "labelStarId": "sadalsuud"
+  },
+  {
+    "name": "Pisces",
+    "abbreviation": "Psc",
+    "lines": [
+      ["alrescha", "omega-psc"],
+      ["omega-psc", "gamma-psc"],
+      ["alrescha", "eta-psc"]
+    ],
+    "labelStarId": "alrescha"
+  },
+  {
+    "name": "Orion",
+    "abbreviation": "Ori",
+    "lines": [
+      ["betelgeuse", "bellatrix"],
+      ["betelgeuse", "mintaka"],
+      ["bellatrix", "alnitak"],
+      ["mintaka", "alnilam"],
+      ["alnilam", "alnitak"],
+      ["mintaka", "saiph"],
+      ["alnitak", "rigel"],
+      ["rigel", "saiph"]
+    ],
+    "labelStarId": "alnilam"
+  },
+  {
+    "name": "Ursa Major",
+    "abbreviation": "UMa",
+    "lines": [
+      ["dubhe", "merak"],
+      ["merak", "phecda"],
+      ["phecda", "megrez"],
+      ["megrez", "alioth"],
+      ["alioth", "mizar"],
+      ["mizar", "alkaid"],
+      ["megrez", "dubhe"]
+    ],
+    "labelStarId": "dubhe"
+  },
+  {
+    "name": "Ursa Minor",
+    "abbreviation": "UMi",
+    "lines": [
+      ["polaris", "yildun"],
+      ["yildun", "pherkad"],
+      ["pherkad", "kochab"]
+    ],
+    "labelStarId": "polaris"
+  },
+  {
+    "name": "Cassiopeia",
+    "abbreviation": "Cas",
+    "lines": [
+      ["caph", "schedar"],
+      ["schedar", "gamma-cas"],
+      ["gamma-cas", "ruchbah"],
+      ["ruchbah", "segin"]
+    ],
+    "labelStarId": "gamma-cas"
+  },
+  {
+    "name": "Cygnus",
+    "abbreviation": "Cyg",
+    "lines": [
+      ["deneb", "sadr"],
+      ["sadr", "albireo"],
+      ["sadr", "gienah"],
+      ["sadr", "delta-cyg"]
+    ],
+    "labelStarId": "sadr"
+  },
+  {
+    "name": "Lyra",
+    "abbreviation": "Lyr",
+    "lines": [
+      ["vega", "sheliak"],
+      ["sheliak", "sulafat"],
+      ["sulafat", "delta-lyr"],
+      ["delta-lyr", "vega"]
+    ],
+    "labelStarId": "vega"
+  },
+  {
+    "name": "Aquila",
+    "abbreviation": "Aql",
+    "lines": [
+      ["tarazed", "altair"],
+      ["altair", "alshain"]
+    ],
+    "labelStarId": "altair"
+  },
+  {
+    "name": "Canis Major",
+    "abbreviation": "CMa",
+    "lines": [
+      ["sirius", "adhara"]
+    ],
+    "labelStarId": "sirius"
+  },
+  {
+    "name": "Canis Minor",
+    "abbreviation": "CMi",
+    "lines": [
+      ["procyon", "gomeisa"]
+    ],
+    "labelStarId": "procyon"
+  },
+  {
+    "name": "Crux",
+    "abbreviation": "Cru",
+    "lines": [
+      ["acrux", "gacrux"],
+      ["mimosa", "delta-cru"]
+    ],
+    "labelStarId": "acrux"
+  }
+]

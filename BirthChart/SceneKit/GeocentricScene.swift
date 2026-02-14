@@ -153,6 +153,10 @@ enum GeocentricScene {
             addLabel(to: moonNode, text: "Moon \(moon.sign.symbol)", size: 0.4)
         }
 
+        // --- Constellations & Star Field ---
+        let starField = StarFieldBuilder.build(at: date)
+        scene.rootNode.addChildNode(starField)
+
         // --- Camera ---
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
@@ -212,6 +216,11 @@ enum GeocentricScene {
                 0.5,
                 moonScale * sin(Float(moonAngle))
             )
+        }
+
+        // Update star field precession (only when time has changed significantly)
+        if let starField = root.childNode(withName: "CelestialSphere", recursively: false) {
+            StarFieldBuilder.updatePrecession(node: starField, date: date)
         }
 
         SCNTransaction.commit()

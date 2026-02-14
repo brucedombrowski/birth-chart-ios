@@ -14,6 +14,7 @@ struct EarthOrbitView: View {
     @State private var speedLabel = ""
     @State private var activeSatCount = 0
     @State private var isISSCamera = false
+    @State private var astroAge = ""
 
     var body: some View {
         ZStack {
@@ -28,7 +29,8 @@ struct EarthOrbitView: View {
                 currentDateString: $currentDateString,
                 speedLabel: $speedLabel,
                 activeSatCount: $activeSatCount,
-                isISSCamera: $isISSCamera
+                isISSCamera: $isISSCamera,
+                astroAge: $astroAge
             )
             .ignoresSafeArea()
 
@@ -49,10 +51,15 @@ struct EarthOrbitView: View {
                                 .font(.caption2)
                                 .foregroundColor(.cyan)
                         }
+                        if !astroAge.isEmpty {
+                            Text(astroAge)
+                                .font(.caption2)
+                                .foregroundColor(.yellow.opacity(0.7))
+                        }
                     }
                     .foregroundColor(.white.opacity(0.8))
-                    .padding(timeOffsetDays != 0 || !speedLabel.isEmpty ? 8 : 0)
-                    .background(.ultraThinMaterial.opacity(timeOffsetDays != 0 || !speedLabel.isEmpty ? 0.3 : 0))
+                    .padding(timeOffsetDays != 0 || !speedLabel.isEmpty || !astroAge.isEmpty ? 8 : 0)
+                    .background(.ultraThinMaterial.opacity(timeOffsetDays != 0 || !speedLabel.isEmpty || !astroAge.isEmpty ? 0.3 : 0))
                     .clipShape(RoundedRectangle(cornerRadius: 8))
 
                     Spacer()
@@ -133,6 +140,7 @@ struct EarthOrbitSceneView: UIViewRepresentable {
     @Binding var speedLabel: String
     @Binding var activeSatCount: Int
     @Binding var isISSCamera: Bool
+    @Binding var astroAge: String
 
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -173,7 +181,8 @@ struct EarthOrbitSceneView: UIViewRepresentable {
         private var lastRecompute: TimeInterval = 0
         private let deadzone: Float = 0.1
 
-        // Time acceleration (pressure-based)
+        // Time state
+        private var isPaused = false
 
         // ISS camera
         private var isISSCamera = false
@@ -214,15 +223,16 @@ struct EarthOrbitSceneView: UIViewRepresentable {
             let crossJust = parent.controller.crossJustPressed
             let triJust = parent.controller.triangleJustPressed
             let squareJust = parent.controller.squareJustPressed
+            let circleJust = parent.controller.circleJustPressed
 
             guard parent.controller.isConnected else {
-                // Auto-update satellites without controller (every ~2 seconds)
-                if abs(time - lastRecompute) > 2.0 && parent.timeOffsetDays == 0 {
+                // No controller: advance real-time every ~1 second (touch to pause)
+                if !isPaused && abs(time - lastRecompute) > 1.0 {
                     lastRecompute = time
                     DispatchQueue.main.async { [weak self] in
                         guard let self, let scene = self.scene else { return }
-                        let now = Date()
-                        GeocentricScene.updatePositions(in: scene, date: now, chart: self.parent.chart)
+                        let currentDate = Date().addingTimeInterval(self.parent.timeOffsetDays * 86400)
+                        GeocentricScene.updatePositions(in: scene, date: currentDate, chart: self.parent.chart)
                     }
                 }
                 return
@@ -234,30 +244,30 @@ struct EarthOrbitSceneView: UIViewRepresentable {
 
             // --- ISS Camera Mode ---
             if isISSCamera {
-                // In ISS camera: left stick orbits around ISS viewpoint
+                // In ISS camera: left stick pans the view around
                 if abs(lx) > deadzone { issOrbitAngleH += lx * dt * 1.5 }
 
-                // Position camera at ISS, looking at Earth
+                // Camera sits at ISS position, looking down at Earth
                 if let issNode = scene?.rootNode.childNode(withName: "iss", recursively: false),
                    let cam = cameraNode {
                     let issPos = issNode.position
-                    // Offset camera slightly behind ISS (away from Earth)
                     let dist = sqrt(issPos.x * issPos.x + issPos.y * issPos.y + issPos.z * issPos.z)
                     guard dist > 0.01 else { return }
-                    // Normal direction outward from Earth
+
+                    // Slight inward offset so camera is just inside ISS, facing Earth
                     let nx = issPos.x / dist
                     let ny = issPos.y / dist
                     let nz = issPos.z / dist
-                    // Camera behind ISS + local orbit angle
-                    let offset: Float = 0.8
-                    let sideX = -nz * sin(issOrbitAngleH) + nx * cos(issOrbitAngleH) * 0
-                    let sideZ = nx * sin(issOrbitAngleH) + nz * cos(issOrbitAngleH) * 0
                     cam.position = SCNVector3(
-                        issPos.x + nx * offset + sin(issOrbitAngleH) * 0.5,
-                        issPos.y + ny * offset + 0.3,
-                        issPos.z + nz * offset + cos(issOrbitAngleH) * 0.5
+                        issPos.x - nx * 0.15,
+                        issPos.y - ny * 0.15,
+                        issPos.z - nz * 0.15
                     )
-                    cam.look(at: SCNVector3(0, 0, 0))  // Look at Earth center
+
+                    // Look at Earth, with left stick allowing slight pan
+                    let lookX = sin(issOrbitAngleH) * 0.5
+                    let lookZ = cos(issOrbitAngleH) * 0.5
+                    cam.look(at: SCNVector3(lookX, 0, lookZ))
                 }
             } else {
                 // --- Free Camera ---
@@ -285,11 +295,11 @@ struct EarthOrbitSceneView: UIViewRepresentable {
             // --- Triggers: Pressure-Based Time Throttle ---
             let maxPressure = max(r2, l2)
             if maxPressure > deadzone {
+                // Manual scrub — trigger controls speed
                 let (speed, label) = timeSpeed(pressure: maxPressure)
                 let forward = Double(r2) * speed * Double(dt)
                 let backward = Double(l2) * speed * Double(dt)
                 let timeDelta = forward - backward
-
                 let newOffset = parent.timeOffsetDays + timeDelta
 
                 DispatchQueue.main.async { [weak self] in
@@ -297,6 +307,30 @@ struct EarthOrbitSceneView: UIViewRepresentable {
                 }
 
                 if abs(time - lastRecompute) > 0.05 {
+                    lastRecompute = time
+                    DispatchQueue.main.async { [weak self] in
+                        guard let self else { return }
+                        self.parent.timeOffsetDays = newOffset
+                        self.recomputePositions(offsetDays: newOffset)
+                    }
+                } else {
+                    DispatchQueue.main.async { [weak self] in
+                        self?.parent.timeOffsetDays = newOffset
+                    }
+                }
+            } else if !isPaused {
+                // No trigger pressed — advance real-time
+                let realDays = Double(dt) / 86400.0
+                let newOffset = parent.timeOffsetDays + realDays
+
+                if !parent.speedLabel.isEmpty {
+                    DispatchQueue.main.async { [weak self] in
+                        self?.parent.speedLabel = ""
+                    }
+                }
+
+                // Update positions every ~1 second for real-time
+                if abs(time - lastRecompute) > 1.0 {
                     lastRecompute = time
                     DispatchQueue.main.async { [weak self] in
                         guard let self else { return }
@@ -343,10 +377,19 @@ struct EarthOrbitSceneView: UIViewRepresentable {
                     self.isISSCamera.toggle()
                     self.parent.isISSCamera = self.isISSCamera
                     self.issOrbitAngleH = 0
-                    // Reset zoom for appropriate view
                     if !self.isISSCamera {
                         self.orbitDistance = 22
                     }
+                }
+            }
+
+            // Circle: pause / play
+            if circleJust {
+                DispatchQueue.main.async { [weak self] in
+                    guard let self else { return }
+                    self.parent.controller.circleJustPressed = false
+                    self.isPaused.toggle()
+                    self.parent.speedLabel = self.isPaused ? "PAUSED" : ""
                 }
             }
         }
@@ -354,6 +397,14 @@ struct EarthOrbitSceneView: UIViewRepresentable {
         private func recomputePositions(offsetDays: Double) {
             let newDate = parent.initialDate.addingTimeInterval(offsetDays * 86400)
             parent.currentDateString = dateFormatter.string(from: newDate)
+
+            // Show astrological age when time-traveling significantly
+            let absDays = abs(offsetDays)
+            if absDays > 365 {
+                parent.astroAge = Precession.astrologicalAge(at: newDate)
+            } else {
+                parent.astroAge = ""
+            }
 
             DispatchQueue.global(qos: .userInteractive).async { [weak self] in
                 guard let self else { return }

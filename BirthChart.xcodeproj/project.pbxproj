@@ -32,6 +32,10 @@
 		D40000000000000000000006 /* EarthOrbitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000005; };
 		D40000000000000000000008 /* satellites.json in Resources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000007; };
 		D4000000000000000000000A /* earth_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D40000000000000000000009; };
+		E10000000000000000000002 /* ConstellationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000001; };
+		E10000000000000000000004 /* StarFieldBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000003; };
+		E10000000000000000000006 /* stars.json in Resources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000005; };
+		E10000000000000000000008 /* constellation_lines.json in Resources */ = {isa = PBXBuildFile; fileRef = E10000000000000000000007; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,10 @@
 		D40000000000000000000005 /* EarthOrbitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthOrbitView.swift; sourceTree = "<group>"; };
 		D40000000000000000000007 /* satellites.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = satellites.json; sourceTree = "<group>"; };
 		D40000000000000000000009 /* earth_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth_texture.jpg; sourceTree = "<group>"; };
+		E10000000000000000000001 /* ConstellationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationData.swift; sourceTree = "<group>"; };
+		E10000000000000000000003 /* StarFieldBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarFieldBuilder.swift; sourceTree = "<group>"; };
+		E10000000000000000000005 /* stars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stars.json; sourceTree = "<group>"; };
+		E10000000000000000000007 /* constellation_lines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = constellation_lines.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -103,6 +111,7 @@
 				A20000090000000000000009 /* BirthChart.swift */,
 				A20000190000000000000013 /* SpaceLaunch.swift */,
 				D40000000000000000000001 /* OrbitalObject.swift */,
+				E10000000000000000000001 /* ConstellationData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 			children = (
 				A2000015000000000000000F /* SolarSystemScene.swift */,
 				D40000000000000000000003 /* GeocentricScene.swift */,
+				E10000000000000000000003 /* StarFieldBuilder.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -156,6 +166,8 @@
 				A2000021000000000000001B /* launches.json */,
 				D40000000000000000000007 /* satellites.json */,
 				D40000000000000000000009 /* earth_texture.jpg */,
+				E10000000000000000000005 /* stars.json */,
+				E10000000000000000000007 /* constellation_lines.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -238,6 +250,8 @@
 				D40000000000000000000002 /* OrbitalObject.swift in Sources */,
 				D40000000000000000000004 /* GeocentricScene.swift in Sources */,
 				D40000000000000000000006 /* EarthOrbitView.swift in Sources */,
+				E10000000000000000000002 /* ConstellationData.swift in Sources */,
+				E10000000000000000000004 /* StarFieldBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +266,8 @@
 				A1000020000000000000001A /* launches.json in Resources */,
 				D40000000000000000000008 /* satellites.json in Resources */,
 				D4000000000000000000000A /* earth_texture.jpg in Resources */,
+				E10000000000000000000006 /* stars.json in Resources */,
+				E10000000000000000000008 /* constellation_lines.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
