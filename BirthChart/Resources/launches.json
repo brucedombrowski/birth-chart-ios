@@ -420,6 +420,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1963-036A"
   },
   {
+    "id": "1964-052A",
+    "name": "Nimbus 1",
+    "date": "1964-08-28T08:56:00Z",
+    "program": "Earth Observation",
+    "detail": "Advanced weather research satellite with improved imaging capabilities. Second-generation meteorological spacecraft.",
+    "icon": "☁️",
+    "launchSite": {
+      "name": "Vandenberg AFB, California",
+      "latitude": 34.757,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1964-052A"
+  },
+  {
     "id": "1964-065A",
     "name": "Voskhod 1",
     "date": "1964-10-12T07:30:01Z",
@@ -518,6 +532,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-068A"
   },
   {
+    "id": "1965-096A",
+    "name": "Astérix",
+    "date": "1965-11-26T14:47:00Z",
+    "program": "International",
+    "detail": "First French satellite, making France the third nation to launch a satellite independently. Launched on Diamant rocket.",
+    "icon": "🇫🇷",
+    "launchSite": {
+      "name": "Hammaguir, Algeria",
+      "latitude": 30.8788,
+      "longitude": -3.0493
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-096A"
+  },
+  {
     "id": "1965-100A",
     "name": "Gemini 7",
     "date": "1965-12-04T19:30:03Z",
@@ -614,6 +642,20 @@
       "longitude": -80.5542
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1966-104A"
+  },
+  {
+    "id": "1966-110A",
+    "name": "ATS-1",
+    "date": "1966-12-07T03:32:00Z",
+    "program": "Earth Observation",
+    "detail": "First geostationary satellite to capture weather images from a fixed position over Earth. Applications Technology Satellite.",
+    "icon": "🌍",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36A, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1966-110A"
   },
   {
     "id": "APOLLO-1",
@@ -726,6 +768,20 @@
       "longitude": -80.6041
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-085A"
+  },
+  {
+    "id": "1970-011A",
+    "name": "Ohsumi",
+    "date": "1970-02-11T04:25:00Z",
+    "program": "International",
+    "detail": "First Japanese satellite, making Japan the fourth nation to launch a satellite independently. Launched on Lambda 4S rocket.",
+    "icon": "🇯🇵",
+    "launchSite": {
+      "name": "Uchinoura, Japan",
+      "latitude": 31.2521,
+      "longitude": 131.0811
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1970-011A"
   },
   {
     "id": "1970-029A",
@@ -854,6 +910,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063A"
   },
   {
+    "id": "1971-093A",
+    "name": "Prospero",
+    "date": "1971-10-28T04:09:00Z",
+    "program": "International",
+    "detail": "Only British satellite launched by a British rocket (Black Arrow). Sixth nation to achieve independent launch capability.",
+    "icon": "🇬🇧",
+    "launchSite": {
+      "name": "Woomera, Australia",
+      "latitude": -31.1003,
+      "longitude": 136.828
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-093A"
+  },
+  {
     "id": "1972-012A",
     "name": "Pioneer 10",
     "date": "1972-03-02T01:49:00Z",
@@ -880,6 +950,20 @@
       "longitude": -80.6041
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-031A"
+  },
+  {
+    "id": "1972-058A",
+    "name": "Landsat 1 (ERTS-1)",
+    "date": "1972-07-23T13:06:00Z",
+    "program": "Earth Observation",
+    "detail": "First civilian Earth resources satellite for land imaging. Revolutionized Earth observation and natural resource management.",
+    "icon": "🗺️",
+    "launchSite": {
+      "name": "Vandenberg SLC-2W, California",
+      "latitude": 34.756,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-058A"
   },
   {
     "id": "1972-081A",
@@ -1008,6 +1092,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1974-027A"
   },
   {
+    "id": "1975-033A",
+    "name": "Aryabhata",
+    "date": "1975-04-19T03:00:00Z",
+    "program": "International",
+    "detail": "First Indian satellite, launched by Soviet Union. Named after ancient Indian mathematician and astronomer.",
+    "icon": "🇮🇳",
+    "launchSite": {
+      "name": "Kapustin Yar, Russia",
+      "latitude": 48.578,
+      "longitude": 46.253
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-033A"
+  },
+  {
     "id": "1975-065B",
     "name": "Apollo-Soyuz Test Project",
     "date": "1975-07-15T19:50:00Z",
@@ -1048,6 +1146,20 @@
       "longitude": -80.583
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-077A"
+  },
+  {
+    "id": "1975-100A",
+    "name": "GOES-1",
+    "date": "1975-10-16T22:00:00Z",
+    "program": "Earth Observation",
+    "detail": "First Geostationary Operational Environmental Satellite for weather monitoring. Established foundation for modern weather forecasting.",
+    "icon": "🌤️",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36B, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-100A"
   },
   {
     "id": "1976-017A",
@@ -1120,6 +1232,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1977-084A"
   },
   {
+    "id": "1977-108A",
+    "name": "Meteosat 1",
+    "date": "1977-11-23T12:58:00Z",
+    "program": "Earth Observation",
+    "detail": "First European geostationary weather satellite. Part of ESA's meteorological satellite program.",
+    "icon": "🇪🇺",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1977-108A"
+  },
+  {
     "id": "1978-020A",
     "name": "GPS Block I (Navstar 1)",
     "date": "1978-02-22T17:45:00Z",
@@ -1174,6 +1300,20 @@
       "longitude": 40.578
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1982-041A"
+  },
+  {
+    "id": "1982-072A",
+    "name": "Landsat 4",
+    "date": "1982-07-16T13:16:00Z",
+    "program": "Earth Observation",
+    "detail": "First Landsat with Thematic Mapper instrument for enhanced multispectral imaging of Earth's surface.",
+    "icon": "🛰️",
+    "launchSite": {
+      "name": "Vandenberg SLC-2W, California",
+      "latitude": 34.756,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1982-072A"
   },
   {
     "id": "1982-092A",
@@ -1260,6 +1400,34 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1986-003A"
   },
   {
+    "id": "1986-019A",
+    "name": "SPOT 1",
+    "date": "1986-02-22T01:44:00Z",
+    "program": "Earth Observation",
+    "detail": "First commercial high-resolution Earth imaging satellite. French Satellite Pour l'Observation de la Terre.",
+    "icon": "📸",
+    "launchSite": {
+      "name": "Kourou, French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1986-019A"
+  },
+  {
+    "id": "1988-087A",
+    "name": "Ofeq 1",
+    "date": "1988-09-19T09:33:00Z",
+    "program": "International",
+    "detail": "First Israeli satellite, launched westward into retrograde orbit due to geopolitical constraints. Eighth nation with independent launch.",
+    "icon": "🇮🇱",
+    "launchSite": {
+      "name": "Palmachim, Israel",
+      "latitude": 31.897,
+      "longitude": 34.69
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1988-087A"
+  },
+  {
     "id": "1988-091A",
     "name": "STS-26",
     "date": "1988-09-29T15:37:00Z",
@@ -1344,6 +1512,48 @@
     "source": "NASA Kennedy Space Center"
   },
   {
+    "id": "1990-065A",
+    "name": "Badr-1",
+    "date": "1990-07-16T12:20:00Z",
+    "program": "International",
+    "detail": "First Pakistani satellite, launched from China. Amateur radio satellite built with international cooperation.",
+    "icon": "🇵🇰",
+    "launchSite": {
+      "name": "Xichang, China",
+      "latitude": 28.2463,
+      "longitude": 102.0268
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1990-065A"
+  },
+  {
+    "id": "1991-050A",
+    "name": "ERS-1",
+    "date": "1991-07-17T03:46:00Z",
+    "program": "Earth Observation",
+    "detail": "ESA's first radar Earth observation satellite. European Remote Sensing satellite for ocean and ice monitoring.",
+    "icon": "📡",
+    "launchSite": {
+      "name": "Kourou, French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1991-050A"
+  },
+  {
+    "id": "1992-052B",
+    "name": "KITSAT-1",
+    "date": "1992-08-10T23:08:00Z",
+    "program": "International",
+    "detail": "First South Korean satellite, developed by KAIST. Korea Institute of Technology Satellite for amateur radio and imaging.",
+    "icon": "🇰🇷",
+    "launchSite": {
+      "name": "Kourou, French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1992-052B"
+  },
+  {
     "id": "1993-074A",
     "name": "STS-61",
     "date": "1993-12-02T09:27:00Z",
@@ -1384,6 +1594,34 @@
       "longitude": -80.6041
     },
     "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "1995-046A",
+    "name": "FASat-Alfa",
+    "date": "1995-08-31T23:53:00Z",
+    "program": "International",
+    "detail": "First Chilean satellite, demonstrating Chilean space capabilities. Fuerza Aérea Satellite for Earth observation.",
+    "icon": "🇨🇱",
+    "launchSite": {
+      "name": "Vandenberg SLC-6, California",
+      "latitude": 34.5814,
+      "longitude": -120.6256
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1995-046A"
+  },
+  {
+    "id": "1995-059A",
+    "name": "RADARSAT-1",
+    "date": "1995-11-04T14:21:00Z",
+    "program": "Earth Observation",
+    "detail": "Canadian synthetic aperture radar satellite for all-weather Earth imaging. Advanced SAR technology for ice and ocean monitoring.",
+    "icon": "🇨🇦",
+    "launchSite": {
+      "name": "Vandenberg SLC-4W, California",
+      "latitude": 34.6328,
+      "longitude": -120.6155
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1995-059A"
   },
   {
     "id": "1996-053A",
@@ -1512,6 +1750,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1999-003A"
   },
   {
+    "id": "1999-068A",
+    "name": "Terra (EOS AM-1)",
+    "date": "1999-12-18T18:57:00Z",
+    "program": "Earth Observation",
+    "detail": "NASA's flagship Earth science satellite with five instruments studying climate, atmosphere, and land. Earth Observing System morning satellite.",
+    "icon": "🌏",
+    "launchSite": {
+      "name": "Vandenberg SLC-2W, California",
+      "latitude": 34.756,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1999-068A"
+  },
+  {
     "id": "2000-034A",
     "name": "ISS Expedition 1",
     "date": "2000-10-31T07:52:47Z",
@@ -1568,6 +1820,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2001-004A"
   },
   {
+    "id": "2002-022A",
+    "name": "Aqua (EOS PM-1)",
+    "date": "2002-05-04T09:54:00Z",
+    "program": "Earth Observation",
+    "detail": "NASA satellite for water cycle observation, monitoring evaporation, precipitation, ice, and ocean circulation.",
+    "icon": "💧",
+    "launchSite": {
+      "name": "Vandenberg SLC-2W, California",
+      "latitude": 34.756,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2002-022A"
+  },
+  {
     "id": "2003-004A",
     "name": "STS-107",
     "date": "2003-01-16T15:39:00Z",
@@ -1580,6 +1846,20 @@
       "longitude": -80.6041
     },
     "source": "NASA History Division"
+  },
+  {
+    "id": "2003-019A",
+    "name": "Hayabusa",
+    "date": "2003-05-09T13:29:00Z",
+    "program": "International",
+    "detail": "First asteroid sample return mission, visited asteroid Itokawa. Japanese spacecraft returned samples to Earth in 2010.",
+    "icon": "🪐",
+    "launchSite": {
+      "name": "Uchinoura, Japan",
+      "latitude": 31.2521,
+      "longitude": 131.0811
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-019A"
   },
   {
     "id": "2003-027A",
@@ -1608,6 +1888,20 @@
       "longitude": -80.5618
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-032A"
+  },
+  {
+    "id": "2004-027A",
+    "name": "Aura",
+    "date": "2004-07-15T10:01:00Z",
+    "program": "Earth Observation",
+    "detail": "NASA satellite studying atmospheric chemistry, ozone layer, and air quality. Part of Earth Observing System A-Train.",
+    "icon": "🌫️",
+    "launchSite": {
+      "name": "Vandenberg SLC-2W, California",
+      "latitude": 34.756,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2004-027A"
   },
   {
     "id": "2004-030A",
@@ -1666,6 +1960,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2006-001A"
   },
   {
+    "id": "2006-016A",
+    "name": "CloudSat",
+    "date": "2006-04-28T10:02:00Z",
+    "program": "Earth Observation",
+    "detail": "First satellite with cloud-profiling radar, measuring cloud structure and precipitation globally.",
+    "icon": "☁️",
+    "launchSite": {
+      "name": "Vandenberg SLC-2W, California",
+      "latitude": 34.756,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2006-016A"
+  },
+  {
     "id": "2007-034A",
     "name": "Phoenix",
     "date": "2007-08-04T09:26:34Z",
@@ -1722,6 +2030,20 @@
     "source": "https://www.spacex.com/launches/"
   },
   {
+    "id": "2008-052A",
+    "name": "Chandrayaan-1",
+    "date": "2008-10-22T00:52:00Z",
+    "program": "International",
+    "detail": "India's first lunar mission, discovered water molecules on Moon. Orbited Moon and released Moon Impact Probe.",
+    "icon": "🌙",
+    "launchSite": {
+      "name": "Sriharikota, India",
+      "latitude": 13.7199,
+      "longitude": 80.2304
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2008-052A"
+  },
+  {
     "id": "2008-051A",
     "name": "STS-126",
     "date": "2008-11-14T23:55:39Z",
@@ -1734,6 +2056,20 @@
       "longitude": -80.6041
     },
     "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2009-004A",
+    "name": "Omid",
+    "date": "2009-02-02T19:34:00Z",
+    "program": "International",
+    "detail": "First Iranian satellite launched by Iran's Safir rocket. Demonstrated Iran's independent launch capability.",
+    "icon": "🇮🇷",
+    "launchSite": {
+      "name": "Semnan, Iran",
+      "latitude": 35.2345,
+      "longitude": 53.921
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2009-004A"
   },
   {
     "id": "2009-011A",
@@ -1890,6 +2226,34 @@
     "source": "https://www.spacex.com/launches/"
   },
   {
+    "id": "2012-072A",
+    "name": "Unha-3 (Kwangmyŏngsŏng-3 Unit 2)",
+    "date": "2012-12-12T00:49:00Z",
+    "program": "International",
+    "detail": "North Korean satellite launch, first successful orbital insertion by DPRK. Highly controversial launch.",
+    "icon": "🇰🇵",
+    "launchSite": {
+      "name": "Sohae, North Korea",
+      "latitude": 39.66,
+      "longitude": 124.7053
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2012-072A"
+  },
+  {
+    "id": "2013-008A",
+    "name": "Landsat 8",
+    "date": "2013-02-11T18:02:00Z",
+    "program": "Earth Observation",
+    "detail": "Operational Land Imager with enhanced spectral bands for improved land surface monitoring and natural resource management.",
+    "icon": "🗺️",
+    "launchSite": {
+      "name": "Vandenberg SLC-3E, California",
+      "latitude": 34.644,
+      "longitude": -120.5935
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2013-008A"
+  },
+  {
     "id": "2013-034A",
     "name": "O3b FM1",
     "date": "2013-06-25T00:00:00Z",
@@ -1918,6 +2282,20 @@
     "source": "https://www.northropgrumman.com/space/cygnus-spacecraft/"
   },
   {
+    "id": "2013-060A",
+    "name": "Mangalyaan (MOM)",
+    "date": "2013-11-05T09:08:00Z",
+    "program": "International",
+    "detail": "India's Mars orbiter, first Asian nation to reach Mars and first to succeed on first attempt. Mars Orbiter Mission.",
+    "icon": "🔴",
+    "launchSite": {
+      "name": "Sriharikota, India",
+      "latitude": 13.7199,
+      "longitude": 80.2304
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2013-060A"
+  },
+  {
     "id": "2013-064A",
     "name": "MAVEN",
     "date": "2013-11-18T18:28:00Z",
@@ -1930,6 +2308,48 @@
       "longitude": -80.583
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2013-064A"
+  },
+  {
+    "id": "2013-070A",
+    "name": "Chang'e 3",
+    "date": "2013-12-02T01:30:00Z",
+    "program": "International",
+    "detail": "First Chinese lunar lander with Yutu rover. First soft landing on Moon since 1976, operated for 31 months.",
+    "icon": "🐰",
+    "launchSite": {
+      "name": "Xichang, China",
+      "latitude": 28.2463,
+      "longitude": 102.0268
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2013-070A"
+  },
+  {
+    "id": "2014-016A",
+    "name": "Sentinel-1A",
+    "date": "2014-04-03T21:02:00Z",
+    "program": "Earth Observation",
+    "detail": "ESA Copernicus radar satellite for all-weather Earth monitoring. Part of European Union's Earth observation program.",
+    "icon": "📡",
+    "launchSite": {
+      "name": "Kourou, French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2014-016A"
+  },
+  {
+    "id": "2014-076A",
+    "name": "Hayabusa2",
+    "date": "2014-12-03T04:22:00Z",
+    "program": "International",
+    "detail": "Japanese asteroid sample return mission to asteroid Ryugu. Successfully returned samples to Earth in December 2020.",
+    "icon": "☄️",
+    "launchSite": {
+      "name": "Tanegashima, Japan",
+      "latitude": 30.3925,
+      "longitude": 130.97
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2014-076A"
   },
   {
     "id": "2015-077A",
@@ -1972,6 +2392,20 @@
       "longitude": 100.2915
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2016-049A"
+  },
+  {
+    "id": "2016-071A",
+    "name": "GOES-16",
+    "date": "2016-11-19T23:42:00Z",
+    "program": "Earth Observation",
+    "detail": "Next-generation geostationary weather satellite with Advanced Baseline Imager. Revolutionized weather forecasting and severe storm tracking.",
+    "icon": "🌩️",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2016-071A"
   },
   {
     "id": "2017-003A",
@@ -2042,6 +2476,34 @@
       "longitude": -80.5652
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2018-065A"
+  },
+  {
+    "id": "2018-070A",
+    "name": "ICESat-2",
+    "date": "2018-09-15T12:02:00Z",
+    "program": "Earth Observation",
+    "detail": "Ice, Cloud and land Elevation Satellite with laser altimetry to measure ice sheet elevation changes and sea ice thickness.",
+    "icon": "🧊",
+    "launchSite": {
+      "name": "Vandenberg SLC-2W, California",
+      "latitude": 34.756,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2018-070A"
+  },
+  {
+    "id": "2018-103A",
+    "name": "Chang'e 4",
+    "date": "2018-12-08T02:23:00Z",
+    "program": "International",
+    "detail": "First spacecraft to land on far side of Moon (landing Jan 3, 2019). Yutu-2 rover still operating, longest-lived lunar rover.",
+    "icon": "🌙",
+    "launchSite": {
+      "name": "Xichang, China",
+      "latitude": 28.2463,
+      "longitude": 102.0268
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2018-103A"
   },
   {
     "id": "2018-109A",
@@ -2142,6 +2604,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2020-052A"
   },
   {
+    "id": "2020-087A",
+    "name": "Chang'e 5",
+    "date": "2020-11-24T04:30:00Z",
+    "program": "International",
+    "detail": "Chinese lunar sample return mission, returned 1.73 kg of Moon samples. First lunar sample return since 1976.",
+    "icon": "🌕",
+    "launchSite": {
+      "name": "Wenchang, China",
+      "latitude": 19.6145,
+      "longitude": 110.951
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2020-087A"
+  },
+  {
     "id": "2020-088A",
     "name": "NROL-44",
     "date": "2020-12-11T00:00:00Z",
@@ -2196,6 +2672,20 @@
       "longitude": -80.6041
     },
     "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2021-088A",
+    "name": "Landsat 9",
+    "date": "2021-09-27T18:12:00Z",
+    "program": "Earth Observation",
+    "detail": "Latest Landsat satellite continuing 50-year record of Earth observation for land use, agriculture, and environmental monitoring.",
+    "icon": "🛰️",
+    "launchSite": {
+      "name": "Vandenberg SLC-3E, California",
+      "latitude": 34.644,
+      "longitude": -120.5935
+    },
+    "source": "https://landsat.gsfc.nasa.gov/satellites/landsat-9/"
   },
   {
     "id": "2021-091A",
@@ -2254,6 +2744,20 @@
     "source": "https://www.boeing.com/space/starliner/"
   },
   {
+    "id": "NURI-2022",
+    "name": "Nuri (KSLV-II)",
+    "date": "2022-06-21T07:00:00Z",
+    "program": "International",
+    "detail": "First successful South Korean orbital launch vehicle. Korea Space Launch Vehicle II achieved orbit on second attempt.",
+    "icon": "🚀",
+    "launchSite": {
+      "name": "Naro Space Center, South Korea",
+      "latitude": 34.4316,
+      "longitude": 127.535
+    },
+    "source": "https://www.kari.re.kr/"
+  },
+  {
     "id": "2022-117A",
     "name": "Artemis I",
     "date": "2022-11-16T06:47:44Z",
@@ -2266,6 +2770,20 @@
       "longitude": -80.6208
     },
     "source": "https://www.nasa.gov/artemis-i/"
+  },
+  {
+    "id": "2022-163A",
+    "name": "SWOT",
+    "date": "2022-12-16T11:46:00Z",
+    "program": "Earth Observation",
+    "detail": "Surface Water and Ocean Topography mission measuring ocean surface water elevation with unprecedented precision. NASA-CNES collaboration.",
+    "icon": "🌊",
+    "launchSite": {
+      "name": "Vandenberg SLC-4E, California",
+      "latitude": 34.6321,
+      "longitude": -120.6107
+    },
+    "source": "https://swot.jpl.nasa.gov/"
   },
   {
     "id": "2023-021A",
@@ -2308,6 +2826,34 @@
       "longitude": -80.583
     },
     "source": "https://www.viasat.com/space-innovation/viasat-3/"
+  },
+  {
+    "id": "2023-098A",
+    "name": "Chandrayaan-3",
+    "date": "2023-07-14T09:05:00Z",
+    "program": "International",
+    "detail": "Indian lunar lander mission, first to land near lunar south pole. Demonstrated India's advanced planetary landing capabilities.",
+    "icon": "🌑",
+    "launchSite": {
+      "name": "Sriharikota, India",
+      "latitude": 13.7199,
+      "longitude": 80.2304
+    },
+    "source": "https://www.isro.gov.in/Chandrayaan3.html"
+  },
+  {
+    "id": "2023-122A",
+    "name": "SLIM",
+    "date": "2023-09-07T00:42:00Z",
+    "program": "International",
+    "detail": "Japan's precision Moon lander, landed Jan 20, 2024 with 10m accuracy. Smart Lander for Investigating Moon demonstrated pinpoint landing.",
+    "icon": "🎯",
+    "launchSite": {
+      "name": "Tanegashima, Japan",
+      "latitude": 30.3925,
+      "longitude": 130.97
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2023-122A"
   },
   {
     "id": "2023-109A",

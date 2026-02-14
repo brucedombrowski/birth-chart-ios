@@ -76,10 +76,12 @@ enum LaunchDatabase {
         "Military & Intelligence",
         "Navigation",
         "Commercial & Communications",
+        "Earth Observation",
         "Space Shuttle",
         "Planetary Exploration",
         "Space Stations",
         "Modern Era",
+        "International",
         "Artemis & Beyond",
     ]
 
