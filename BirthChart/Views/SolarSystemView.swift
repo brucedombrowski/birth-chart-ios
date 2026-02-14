@@ -153,8 +153,7 @@ struct SolarSystemSceneView: UIViewRepresentable {
         // Deadzone for sticks
         private let deadzone: Float = 0.1
 
-        // Exponential time acceleration
-        private var triggerHoldTime: Double = 0
+        // Time acceleration (pressure-based)
 
         private let dateFormatter: DateFormatter = {
             let f = DateFormatter()
@@ -167,14 +166,14 @@ struct SolarSystemSceneView: UIViewRepresentable {
             self.parent = parent
         }
 
-        /// Exponential speed curve: the longer you hold the trigger, the faster time moves.
-        private func timeSpeed(holdSeconds: Double) -> (daysPerSec: Double, label: String) {
-            switch holdSeconds {
-            case ..<2:   return (30,    "1 month/sec")
-            case ..<5:   return (365,   "1 year/sec")
-            case ..<8:   return (3650,  "1 decade/sec")
-            case ..<12:  return (36500, "1 century/sec")
-            default:     return (365000, "1 millennium/sec")
+        /// Pressure-based speed curve: harder press = faster time, like a throttle.
+        private func timeSpeed(pressure: Float) -> (daysPerSec: Double, label: String) {
+            switch pressure {
+            case ..<0.25: return (30,     "1 month/sec")
+            case ..<0.50: return (365,    "1 year/sec")
+            case ..<0.75: return (3650,   "1 decade/sec")
+            case ..<0.90: return (36500,  "1 century/sec")
+            default:      return (365000, "1 millennium/sec")
             }
         }
 
@@ -218,20 +217,13 @@ struct SolarSystemSceneView: UIViewRepresentable {
                 cam.look(at: SCNVector3(0, 0, 0))
             }
 
-            // --- Triggers: Exponential Time Scrub ---
-            let triggerActive = r2 > deadzone || l2 > deadzone
-            if triggerActive {
-                triggerHoldTime += Double(dt)
-            } else {
-                triggerHoldTime = 0
-            }
-
-            let (speed, _) = timeSpeed(holdSeconds: triggerHoldTime)
-            let forward = Double(r2 * r2) * speed * Double(dt)
-            let backward = Double(l2 * l2) * speed * Double(dt)
-            let timeDelta = forward - backward
-
-            if abs(timeDelta) > 0.0001 {
+            // --- Triggers: Pressure-Based Time Throttle ---
+            let maxPressure = max(r2, l2)
+            if maxPressure > deadzone {
+                let (speed, _) = timeSpeed(pressure: maxPressure)
+                let forward = Double(r2) * speed * Double(dt)
+                let backward = Double(l2) * speed * Double(dt)
+                let timeDelta = forward - backward
                 let newOffset = parent.timeOffsetDays + timeDelta
 
                 if abs(time - lastRecompute) > 0.1 {
@@ -254,7 +246,6 @@ struct SolarSystemSceneView: UIViewRepresentable {
                     guard let self else { return }
                     self.parent.timeOffsetDays = 0
                     self.parent.controller.crossJustPressed = false
-                    self.triggerHoldTime = 0
                     self.resetPositions()
                 }
             }

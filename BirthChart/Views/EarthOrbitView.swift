@@ -173,8 +173,7 @@ struct EarthOrbitSceneView: UIViewRepresentable {
         private var lastRecompute: TimeInterval = 0
         private let deadzone: Float = 0.1
 
-        // Exponential time acceleration
-        private var triggerHoldTime: Double = 0
+        // Time acceleration (pressure-based)
 
         // ISS camera
         private var isISSCamera = false
@@ -191,14 +190,15 @@ struct EarthOrbitSceneView: UIViewRepresentable {
             self.parent = parent
         }
 
-        /// Exponential speed curve: the longer you hold the trigger, the faster time moves.
-        private func timeSpeed(holdSeconds: Double) -> (daysPerSec: Double, label: String) {
-            switch holdSeconds {
-            case ..<2:   return (1,     "1 day/sec")
-            case ..<5:   return (30,    "1 month/sec")
-            case ..<8:   return (365,   "1 year/sec")
-            case ..<12:  return (3650,  "1 decade/sec")
-            default:     return (36500, "1 century/sec")
+        /// Pressure-based speed curve: harder press = faster time, like a throttle.
+        /// Trigger value 0.0-1.0 maps exponentially to speed.
+        private func timeSpeed(pressure: Float) -> (daysPerSec: Double, label: String) {
+            switch pressure {
+            case ..<0.25: return (1,     "1 day/sec")
+            case ..<0.50: return (30,    "1 month/sec")
+            case ..<0.75: return (365,   "1 year/sec")
+            case ..<0.90: return (3650,  "1 decade/sec")
+            default:      return (36500, "1 century/sec")
             }
         }
 
@@ -282,26 +282,14 @@ struct EarthOrbitSceneView: UIViewRepresentable {
                 }
             }
 
-            // --- Triggers: Exponential Time Scrub ---
-            let triggerActive = r2 > deadzone || l2 > deadzone
-            if triggerActive {
-                triggerHoldTime += Double(dt)
-            } else {
-                if triggerHoldTime > 0 {
-                    // Trigger released — clear speed label
-                    DispatchQueue.main.async { [weak self] in
-                        self?.parent.speedLabel = ""
-                    }
-                }
-                triggerHoldTime = 0
-            }
+            // --- Triggers: Pressure-Based Time Throttle ---
+            let maxPressure = max(r2, l2)
+            if maxPressure > deadzone {
+                let (speed, label) = timeSpeed(pressure: maxPressure)
+                let forward = Double(r2) * speed * Double(dt)
+                let backward = Double(l2) * speed * Double(dt)
+                let timeDelta = forward - backward
 
-            let (speed, label) = timeSpeed(holdSeconds: triggerHoldTime)
-            let forward = Double(r2 * r2) * speed * Double(dt)
-            let backward = Double(l2 * l2) * speed * Double(dt)
-            let timeDelta = forward - backward
-
-            if abs(timeDelta) > 0.00001 {
                 let newOffset = parent.timeOffsetDays + timeDelta
 
                 DispatchQueue.main.async { [weak self] in
@@ -320,6 +308,10 @@ struct EarthOrbitSceneView: UIViewRepresentable {
                         self?.parent.timeOffsetDays = newOffset
                     }
                 }
+            } else if !parent.speedLabel.isEmpty {
+                DispatchQueue.main.async { [weak self] in
+                    self?.parent.speedLabel = ""
+                }
             }
 
             // Cross: reset time
@@ -328,7 +320,6 @@ struct EarthOrbitSceneView: UIViewRepresentable {
                     guard let self else { return }
                     self.parent.timeOffsetDays = 0
                     self.parent.controller.crossJustPressed = false
-                    self.triggerHoldTime = 0
                     self.parent.speedLabel = ""
                     self.resetPositions()
                 }
