@@ -112,6 +112,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1960-002A"
   },
   {
+    "id": "1960-003A",
+    "name": "Transit 1B",
+    "date": "1960-04-13T00:00:00Z",
+    "program": "Navigation",
+    "detail": "First successful navigation satellite, using Doppler shift to determine position. Proved satellite navigation was feasible for ships and submarines.",
+    "icon": "🧭",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1960-003A"
+  },
+  {
     "id": "1960-006A",
     "name": "MIDAS 2",
     "date": "1960-05-24T13:00:00Z",
@@ -378,6 +392,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1963-039A"
   },
   {
+    "id": "1963-049A",
+    "name": "Transit 5A",
+    "date": "1963-12-05T00:00:00Z",
+    "program": "Navigation",
+    "detail": "First nuclear-powered navigation satellite, using SNAP-9A radioisotope thermoelectric generator for extended operational life.",
+    "icon": "⚛️",
+    "launchSite": {
+      "name": "Vandenberg AFB, California",
+      "latitude": 34.757,
+      "longitude": -120.6215
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1963-049A"
+  },
+  {
     "id": "1963-036A",
     "name": "Syncom 3",
     "date": "1964-08-19T12:26:00Z",
@@ -446,6 +474,20 @@
       "longitude": -80.5542
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-024A"
+  },
+  {
+    "id": "1965-028A",
+    "name": "Intelsat 1 (Early Bird)",
+    "date": "1965-04-06T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First commercial communications satellite, demonstrating feasibility of commercial satellite communications for international telecommunications.",
+    "icon": "📡",
+    "launchSite": {
+      "name": "Cape Canaveral LC-17A, Florida",
+      "latitude": 28.4462,
+      "longitude": -80.5618
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-028A"
   },
   {
     "id": "1965-043A",
@@ -840,6 +882,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-031A"
   },
   {
+    "id": "1972-081A",
+    "name": "Anik A1",
+    "date": "1972-11-09T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First domestic communications satellite, launched by Canada. Pioneered domestic satellite communications for a single country.",
+    "icon": "🇨🇦",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36B, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-081A"
+  },
+  {
     "id": "1972-096A",
     "name": "Apollo 17",
     "date": "1972-12-07T05:33:00Z",
@@ -938,6 +994,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1973-068A"
   },
   {
+    "id": "1974-027A",
+    "name": "Westar 1",
+    "date": "1974-04-13T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First United States domestic communications satellite, operated by Western Union for telephone and data relay across the continental US.",
+    "icon": "📞",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36B, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1974-027A"
+  },
+  {
     "id": "1975-065B",
     "name": "Apollo-Soyuz Test Project",
     "date": "1975-07-15T19:50:00Z",
@@ -978,6 +1048,20 @@
       "longitude": -80.583
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1975-077A"
+  },
+  {
+    "id": "1976-017A",
+    "name": "Marisat 1",
+    "date": "1976-02-19T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First maritime communications satellite, providing ship-to-shore and ship-to-ship communications for the U.S. Navy and commercial shipping.",
+    "icon": "⚓",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36B, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1976-017A"
   },
   {
     "id": "1976-125A",
@@ -1050,6 +1134,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1978-020A"
   },
   {
+    "id": "1980-098A",
+    "name": "SBS-1",
+    "date": "1980-11-15T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First U.S. Ku-band commercial communications satellite, operated by Satellite Business Systems for business communications and data transmission.",
+    "icon": "💼",
+    "launchSite": {
+      "name": "Cape Canaveral, Florida",
+      "latitude": 28.3922,
+      "longitude": -80.6077
+    },
+    "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1980-098A"
+  },
+  {
     "id": "1981-034A",
     "name": "STS-1",
     "date": "1981-04-12T12:00:03Z",
@@ -1076,6 +1174,20 @@
       "longitude": 40.578
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1982-041A"
+  },
+  {
+    "id": "1982-092A",
+    "name": "Kosmos 1413 (GLONASS)",
+    "date": "1982-10-12T00:00:00Z",
+    "program": "Navigation",
+    "detail": "First GLONASS navigation satellites launched by Soviet Union, deploying 3 satellites as the beginning of Russia's global navigation system.",
+    "icon": "🇷🇺",
+    "launchSite": {
+      "name": "Baikonur Cosmodrome, Kazakhstan",
+      "latitude": 45.965,
+      "longitude": 63.305
+    },
+    "source": "https://space.skyrocket.de/doc_sdat/glonass.htm"
   },
   {
     "id": "1982-110A",
@@ -1302,6 +1414,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1996-068A"
   },
   {
+    "id": "1997-020A",
+    "name": "Iridium 1",
+    "date": "1997-05-05T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First launch of Iridium constellation satellites, deploying 5 satellites for global mobile satellite phone and data services.",
+    "icon": "📱",
+    "launchSite": {
+      "name": "Vandenberg SLC-4W, California",
+      "latitude": 34.6328,
+      "longitude": -120.6155
+    },
+    "source": "https://space.skyrocket.de/doc_sdat/iridium-1.htm"
+  },
+  {
     "id": "1997-043A",
     "name": "Cassini-Huygens",
     "date": "1997-10-15T08:43:00Z",
@@ -1314,6 +1440,20 @@
       "longitude": -80.577
     },
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1997-043A"
+  },
+  {
+    "id": "1998-008A",
+    "name": "Globalstar FM1",
+    "date": "1998-02-14T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First launch of Globalstar mobile satellite phone constellation, deploying 4 satellites for voice and data services.",
+    "icon": "🌐",
+    "launchSite": {
+      "name": "Cape Canaveral LC-36B, Florida",
+      "latitude": 28.4714,
+      "longitude": -80.5381
+    },
+    "source": "https://space.skyrocket.de/doc_sdat/globalstar.htm"
   },
   {
     "id": "1998-061A",
@@ -1398,6 +1538,20 @@
       "longitude": -80.6041
     },
     "source": "NASA Kennedy Space Center"
+  },
+  {
+    "id": "2001-010A",
+    "name": "XM-1 Rock",
+    "date": "2001-03-18T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First satellite radio broadcasting satellite, launched by Sea Launch to provide digital audio radio service across North America.",
+    "icon": "📻",
+    "launchSite": {
+      "name": "Sea Launch Platform, Pacific Ocean",
+      "latitude": 0.0,
+      "longitude": -154.0
+    },
+    "source": "https://space.skyrocket.de/doc_sdat/xm-1.htm"
   },
   {
     "id": "2001-004A",
@@ -1694,6 +1848,20 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2011-026A"
   },
   {
+    "id": "2011-060A",
+    "name": "Galileo IOV-1",
+    "date": "2011-10-21T00:00:00Z",
+    "program": "Navigation",
+    "detail": "First European Galileo navigation satellites (2 In-Orbit Validation spacecraft), establishing Europe's independent global navigation satellite system.",
+    "icon": "🇪🇺",
+    "launchSite": {
+      "name": "Kourou ELA-3, French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://www.esa.int/Applications/Navigation/Galileo"
+  },
+  {
     "id": "2011-070A",
     "name": "Curiosity/MSL",
     "date": "2011-11-26T15:02:00Z",
@@ -1720,6 +1888,20 @@
       "longitude": -80.577
     },
     "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2013-034A",
+    "name": "O3b FM1",
+    "date": "2013-06-25T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First launch of O3b medium Earth orbit internet constellation, deploying 4 satellites for low-latency broadband to underserved regions.",
+    "icon": "🌍",
+    "launchSite": {
+      "name": "Kourou ELA-3, French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://space.skyrocket.de/doc_sdat/o3b.htm"
   },
   {
     "id": "2013-055A",
@@ -1792,6 +1974,34 @@
     "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2016-049A"
   },
   {
+    "id": "2017-003A",
+    "name": "Iridium NEXT 1",
+    "date": "2017-01-14T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First launch of Iridium NEXT replacement constellation, deploying 10 next-generation satellites with improved capabilities and hosted payloads.",
+    "icon": "🛰️",
+    "launchSite": {
+      "name": "Vandenberg SLC-4E, California",
+      "latitude": 34.6321,
+      "longitude": -120.6107
+    },
+    "source": "https://www.iridium.com/network/iridium-next/"
+  },
+  {
+    "id": "2017-069A",
+    "name": "BeiDou-3 M1",
+    "date": "2017-11-05T00:00:00Z",
+    "program": "Navigation",
+    "detail": "First BeiDou-3 satellites providing Chinese global navigation coverage, launching dual satellites to expand beyond regional Asia-Pacific service.",
+    "icon": "🇨🇳",
+    "launchSite": {
+      "name": "Xichang Satellite Launch Center, China",
+      "latitude": 28.2463,
+      "longitude": 102.0268
+    },
+    "source": "http://www.beidou.gov.cn/"
+  },
+  {
     "id": "2018-017A",
     "name": "Falcon Heavy Demo",
     "date": "2018-02-06T20:45:00Z",
@@ -1848,6 +2058,20 @@
     "source": "https://www.spaceforce.mil"
   },
   {
+    "id": "2019-015A",
+    "name": "OneWeb 1",
+    "date": "2019-02-27T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First launch of OneWeb internet constellation, deploying 6 initial satellites for global broadband coverage, especially to remote areas.",
+    "icon": "🌐",
+    "launchSite": {
+      "name": "Kourou ELA-3, French Guiana",
+      "latitude": 5.2394,
+      "longitude": -52.7686
+    },
+    "source": "https://space.skyrocket.de/doc_sdat/oneweb.htm"
+  },
+  {
     "id": "2019-009A",
     "name": "Crew Dragon Demo-1",
     "date": "2019-03-02T07:49:00Z",
@@ -1860,6 +2084,20 @@
       "longitude": -80.6041
     },
     "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2019-029A",
+    "name": "Starlink v1.0 L1",
+    "date": "2019-05-24T02:30:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First large-scale Starlink launch deploying 60 satellites, demonstrating flat-panel design for low Earth orbit broadband internet constellation.",
+    "icon": "✨",
+    "launchSite": {
+      "name": "Cape Canaveral LC-40, Florida",
+      "latitude": 28.5618,
+      "longitude": -80.577
+    },
+    "source": "https://www.spacex.com/launches/sl-1/"
   },
   {
     "id": "2020-033A",
@@ -2030,6 +2268,20 @@
     "source": "https://www.nasa.gov/artemis-i/"
   },
   {
+    "id": "2023-021A",
+    "name": "Starlink Gen2 v2 Mini",
+    "date": "2023-02-17T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "First Starlink Gen2 launch deploying larger V2 Mini satellites with 4x capacity increase, enhanced inter-satellite links, and direct-to-cell capability.",
+    "icon": "🚀",
+    "launchSite": {
+      "name": "Cape Canaveral LC-40, Florida",
+      "latitude": 28.5618,
+      "longitude": -80.577
+    },
+    "source": "https://www.spacex.com/launches/"
+  },
+  {
     "id": "STARSHIP-IFT1",
     "name": "Starship IFT-1",
     "date": "2023-04-20T13:33:09Z",
@@ -2042,6 +2294,20 @@
       "longitude": -97.1569
     },
     "source": "https://www.spacex.com/launches/"
+  },
+  {
+    "id": "2023-064A",
+    "name": "ViaSat-3 Americas",
+    "date": "2023-04-30T00:00:00Z",
+    "program": "Commercial & Communications",
+    "detail": "Highest capacity commercial communications satellite ever built, providing 1+ Tbps throughput for broadband internet across the Americas.",
+    "icon": "📡",
+    "launchSite": {
+      "name": "Cape Canaveral LC-41, Florida",
+      "latitude": 28.5833,
+      "longitude": -80.583
+    },
+    "source": "https://www.viasat.com/space-innovation/viasat-3/"
   },
   {
     "id": "2023-109A",

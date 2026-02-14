@@ -74,6 +74,8 @@ enum LaunchDatabase {
         "Planetary Probes",
         "Skylab & Salyut",
         "Military & Intelligence",
+        "Navigation",
+        "Commercial & Communications",
         "Space Shuttle",
         "Planetary Exploration",
         "Space Stations",
